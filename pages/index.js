@@ -17,11 +17,17 @@ import FAQSection from '@/blocks/FAQSection/FAQSection'
 import BlogSection from '@/blocks/BlogSection/BlogSection'
 import LatestCourses from '@/blocks/LatestCourses/LatestCourses'
 import Gallery from '@/blocks/Gallery/Gallery'
+import ContactForm from '@/blocks/ContactForm/ContactForm'
+import ContactInfo from '@/blocks/ContactInfo/ContactInfo'
+import FAQ from '@/blocks/FAQ/FAQ'
 
 export default function Home() {
   return (
     <div>
       <Header />
+      <FAQ/>
+      <ContactInfo/>
+      <ContactForm/>
       <Gallery/>
       <LatestCourses/>
       <BlogSection/>

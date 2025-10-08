@@ -1,0 +1,240 @@
+// components/FAQ/FAQ.module.scss
+
+.faqSection {
+  padding: 100px 20px;
+  background-color: #ffffff;
+
+  @media (max-width: 768px) {
+    padding: 80px 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 60px 16px;
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 48px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 40px;
+  }
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 15px;
+  }
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (max-width: 480px) {
+    gap: 12px;
+  }
+}
+
+.faqItem {
+  background-color: #f3f4f6;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  @media (max-width: 768px) {
+    border-radius: 12px;
+  }
+
+  &.open {
+    background-color: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+    .faqQuestion {
+      background-color: #ffffff;
+    }
+
+    .icon {
+      transform: rotate(45deg);
+    }
+
+    .faqAnswerWrapper {
+      max-height: 500px;
+      opacity: 1;
+    }
+  }
+}
+
+.faqQuestion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 32px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+
+  @media (max-width: 768px) {
+    padding: 24px 28px;
+    gap: 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 20px 20px;
+    gap: 16px;
+  }
+
+  &:hover {
+    .questionText {
+      color: #1a1a1a;
+    }
+  }
+}
+
+.questionText {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 17px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+}
+
+.iconWrapper {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+  @media (max-width: 480px) {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #1a1a1a;
+  transition: transform 0.3s ease;
+
+  @media (max-width: 480px) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.faqAnswerWrapper {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faqAnswer {
+  padding: 0 32px 28px 32px;
+
+  @media (max-width: 768px) {
+    padding: 0 28px 24px 28px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 20px 20px 20px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #6b7280;
+    line-height: 1.7;
+    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+}
+
+// Animation for FAQ items on load
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.faqItem {
+  animation: fadeInUp 0.6s ease-out forwards;
+  
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+}
