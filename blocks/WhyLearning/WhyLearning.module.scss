@@ -1,0 +1,110 @@
+// components/WhyLearning/WhyLearning.module.scss
+
+.whyLearningSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1a1a1a;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+  @media (max-width: 968px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featureCard {
+  background-color: #f3f4f6;
+  border-radius: 28px;
+  padding: 48px 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  transition: all 0.3s ease;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    padding: 36px 28px;
+    gap: 24px;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+    background-color: #f9fafb;
+  }
+}
+
+.iconWrapper {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.content {
+  flex: 1;
+}
+
+.featureTitle {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+.featureDescription {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}

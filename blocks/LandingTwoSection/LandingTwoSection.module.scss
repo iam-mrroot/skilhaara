@@ -1,0 +1,203 @@
+// components/AboutSection/AboutSection.module.scss
+
+.aboutSection {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 0  50px;
+  background-color: #fff;
+  border-radius: 50px;
+
+  @media (max-width: 968px) {
+    min-height: 500px;
+    margin: 0  10px;
+  }
+
+  @media (max-width: 640px) {
+    min-height: 450px;
+    margin: 0  10px;
+
+  }
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 2;
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  width: 100%;
+
+  @media (max-width: 968px) {
+    padding: 60px 20px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 40px 20px;
+  }
+}
+
+.content {
+  max-width: 800px;
+
+  @media (max-width: 968px) {
+    max-width: 100%;
+  }
+}
+
+.badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  line-height: 1.2;
+
+  @media (max-width: 968px) {
+    font-size: 42px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 32px;
+  }
+}
+
+.description {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.7;
+  margin: 0 0 36px 0;
+  max-width: 700px;
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+  }
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffffff;
+  color: #5b7cff;
+  padding: 16px 36px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    background-color: #f9fafb;
+
+    .arrowIcon {
+      transform: translateX(4px);
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.arrowIcon {
+  transition: transform 0.3s ease;
+}
+
+.floatingButtons {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 1000;
+
+  @media (max-width: 640px) {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.whatsappButton,
+.phoneButton {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+
+  @media (max-width: 640px) {
+    width: 56px;
+    height: 56px;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    transform: translateY(-2px) scale(1);
+  }
+}
+
+.whatsappButton {
+  background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+}
+
+.phoneButton {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}

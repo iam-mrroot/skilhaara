@@ -1,0 +1,178 @@
+// components/Testimonials/Testimonials.module.scss
+
+.testimonialsSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #2563eb;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.carouselWrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.testimonialsList {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+    overflow-x: scroll;
+  }
+}
+
+.testimonialCard {
+  min-width: calc(33.333% - 16px);
+  background-color: #f9fafb;
+  border-radius: 20px;
+  padding: 40px 32px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+
+  @media (max-width: 1024px) {
+    min-width: calc(50% - 12px);
+  }
+
+  @media (max-width: 640px) {
+    min-width: calc(100% - 40px);
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #e5e7eb;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.feedback {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0 0 32px 0;
+  min-height: 120px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+.studentInfo {
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 0 0 4px 0;
+}
+
+.course {
+  font-size: 15px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.navButton {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid #1a1a1a;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #1a1a1a;
+
+  &:hover:not(:disabled) {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}

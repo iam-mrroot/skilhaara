@@ -1,0 +1,224 @@
+// components/Footer/Footer.module.scss
+
+.footer {
+    background-color: #f3f4f6;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  // Newsletter Section
+  .newsletterSection {
+    padding: 80px 0;
+  }
+  
+  .newsletterContent {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+    
+    @media (max-width: 968px) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+  
+  .newsletterLeft {
+    
+  }
+  
+  .newsletterTitle {
+    font-size: 56px;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin: 0;
+    
+    @media (max-width: 768px) {
+      font-size: 42px;
+    }
+    
+    @media (max-width: 480px) {
+      font-size: 36px;
+    }
+  }
+  
+  .newsletterRight {
+    
+  }
+  
+  .newsletterDescription {
+    font-size: 16px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  
+  .subscribeForm {
+    display: flex;
+    gap: 0;
+    max-width: 500px;
+  }
+  
+  .emailInput {
+    flex: 1;
+    padding: 16px 24px;
+    border: 2px solid #2563eb;
+    border-right: none;
+    border-radius: 50px 0 0 50px;
+    font-size: 15px;
+    outline: none;
+    
+    &::placeholder {
+      color: #9ca3af;
+    }
+    
+    &:focus {
+      border-color: #1d4ed8;
+    }
+  }
+  
+  .submitButton {
+    padding: 16px 40px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: 2px solid #2563eb;
+    border-radius: 0 50px 50px 0;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    
+    &:hover {
+      background-color: #1d4ed8;
+      border-color: #1d4ed8;
+    }
+  }
+  
+  // Footer Main Section
+  .footerMain {
+    padding: 60px 0 40px;
+    border-top: 1px solid #d1d5db;
+  }
+  
+  .footerGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 60px;
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+    
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+  
+  .brandColumn {
+    
+  }
+  
+  .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+  
+  .tagline {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+  
+  .socialMedia {
+    
+  }
+  
+  .socialTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .socialIcon {
+    width: 40px;
+    height: 40px;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: #2563eb;
+      transform: translateY(-3px);
+    }
+  }
+  
+  .linkColumn {
+    
+  }
+  
+  .columnTitle {
+    font-size: 13px;
+    font-weight: 700;
+    color: #2563eb;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+  }
+  
+  .linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      margin-bottom: 16px;
+      
+      a {
+        font-size: 15px;
+        color: #4b5563;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+          color: #2563eb;
+        }
+      }
+    }
+  }
+  
+  // Copyright Section
+  .copyright {
+    padding: 24px 0;
+    border-top: 1px solid #d1d5db;
+    background-color: #ffffff;
+  }
+  
+  .copyrightText {
+    font-size: 14px;
+    color: #6b7280;
+    text-align: center;
+    margin: 0;
+  }
