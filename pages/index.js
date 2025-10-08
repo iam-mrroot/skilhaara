@@ -16,11 +16,13 @@ import React from 'react'
 import FAQSection from '@/blocks/FAQSection/FAQSection'
 import BlogSection from '@/blocks/BlogSection/BlogSection'
 import LatestCourses from '@/blocks/LatestCourses/LatestCourses'
+import Gallery from '@/blocks/Gallery/Gallery'
 
 export default function Home() {
   return (
     <div>
       <Header />
+      <Gallery/>
       <LatestCourses/>
       <BlogSection/>
       <FAQSection/>
