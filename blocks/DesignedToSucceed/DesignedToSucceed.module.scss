@@ -1,0 +1,251 @@
+// components/DesignedToSucceed/DesignedToSucceed.module.scss
+
+.designedSection {
+  padding: 100px 20px;
+  background-color: #ffffff;
+
+  @media (max-width: 968px) {
+    padding: 80px 20px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 60px 20px;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 64px;
+
+  @media (max-width: 640px) {
+    margin-bottom: 48px;
+  }
+}
+
+.badge {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1a1a1a;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 28px;
+  }
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 32px;
+  align-items: flex-start;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.imageColumn {
+  position: relative;
+
+  @media (max-width: 1200px) {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.imageColumnWithButtons {
+  position: relative;
+
+  @media (max-width: 1200px) {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.columnImage {
+  width: 100%;
+  height: auto;
+  border-radius: 32px;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+
+  @media (max-width: 640px) {
+    border-radius: 24px;
+  }
+}
+
+.featuresColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featuresWrapper {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 40px;
+  padding: 48px 40px;
+
+  @media (max-width: 640px) {
+    border-radius: 32px;
+    padding: 32px 24px;
+  }
+}
+
+.featureCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px;
+  background-color: #f9fafb;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  @media (max-width: 640px) {
+    padding: 20px;
+    gap: 16px;
+  }
+}
+
+.iconWrapper {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: 640px) {
+    width: 48px;
+    height: 48px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.featureContent {
+  flex: 1;
+}
+
+.featureTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+
+  @media (max-width: 640px) {
+    font-size: 18px;
+  }
+}
+
+.featureDescription {
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+
+  @media (max-width: 640px) {
+    font-size: 14px;
+  }
+}
+
+.floatingButtons {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 10;
+
+  @media (max-width: 640px) {
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+.whatsappButton,
+.phoneButton {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+
+  @media (max-width: 640px) {
+    width: 56px;
+    height: 56px;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    transform: translateY(-2px) scale(1);
+  }
+}
+
+.whatsappButton {
+  background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+}
+
+.phoneButton {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}

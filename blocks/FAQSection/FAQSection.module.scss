@@ -1,0 +1,277 @@
+// components/FAQSection/FAQSection.module.scss
+
+.faqSection {
+  padding: 100px 20px;
+  background-color: #ffffff;
+  position: relative;
+
+  @media (max-width: 968px) {
+    padding: 80px 20px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 60px 20px;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+.faqColumn {
+  padding-right: 20px;
+
+  @media (max-width: 1024px) {
+    padding-right: 0;
+  }
+}
+
+.badge {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1a1a1a;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 28px;
+  }
+}
+
+.description {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+
+  @media (max-width: 640px) {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faqItem {
+  background-color: #f9fafb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &.active {
+    background-color: #f3f4f6;
+  }
+}
+
+.faqButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+
+  @media (max-width: 640px) {
+    padding: 16px 20px;
+    gap: 12px;
+  }
+}
+
+.iconWrapper {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 640px) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+
+  @media (max-width: 640px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.faqQuestion {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.4;
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+  }
+}
+
+.chevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: #6b7280;
+  transition: transform 0.3s ease;
+
+  .active & {
+    transform: rotate(180deg);
+  }
+}
+
+.faqAnswer {
+  padding: 0 24px 20px 72px;
+  animation: slideDown 0.3s ease;
+
+  p {
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    padding: 0 20px 16px 60px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.imageColumn {
+  position: sticky;
+  top: 100px;
+
+  @media (max-width: 1024px) {
+    position: relative;
+    top: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.faqImage {
+  width: 100%;
+  height: auto;
+  border-radius: 32px;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+
+  @media (max-width: 640px) {
+    border-radius: 24px;
+  }
+}
+
+.floatingButtons {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 1000;
+
+  @media (max-width: 640px) {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.whatsappButton,
+.phoneButton {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+
+  @media (max-width: 640px) {
+    width: 56px;
+    height: 56px;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  &:active {
+    transform: translateY(-2px) scale(1);
+  }
+}
+
+.whatsappButton {
+  background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
+}
+
+.phoneButton {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
