@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   // min-height: 600px;
-  height: 80vh;
+  // height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +57,7 @@
   text-align: center;
   max-width: 900px;
   padding: 0 20px;
-  margin-top: 200px;
+  margin-top: 10px;
 }
 
 .badge {
@@ -72,7 +72,7 @@
 }
 
 .heading {
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 1.2;
   color: #1a1a1a;
@@ -89,7 +89,7 @@
 
 .italic {
   font-style: italic;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .description {
@@ -114,17 +114,21 @@
   color: #ffffff;
   padding: 16px 32px;
   border-radius: 50px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
   border: none;
 
+  span {
+    font-weight: 400;
+  }
+
   &:hover {
-    background-color: #2a3442;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(26, 35, 50, 0.3);
+    // background-color: #2a3442;
+    // transform: translateY(-2px);
+    // box-shadow: 0 8px 20px rgba(26, 35, 50, 0.3);
   }
 
   &:active {

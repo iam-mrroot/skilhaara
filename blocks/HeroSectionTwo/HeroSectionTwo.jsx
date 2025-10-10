@@ -1,11 +1,11 @@
 // components/HeroSection/HeroSection.tsx
 import Link from 'next/link';
-import styles from './HeroSection.module.scss';
+import styles from './HeroSectionTwo.module.scss';
 
-const HeroSection = () => {
+const HeroSectionTwo = () => {
     return (
         <section className={styles.heroSection}>
-            <div className={styles.videoContainer}>
+            {/* <div className={styles.videoContainer}>
                 <video
                     className={styles.videoBackground}
                     autoPlay
@@ -13,19 +13,19 @@ const HeroSection = () => {
                     muted
                     playsInline
                 >
-                    <source src="/assets/videos/landing.mp4" type="video/mp4" />
+                    <source src="https://videos.pexels.com/video-files/4497367/4497367-uhd_2560_1440_25fps.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                {/* <div className={styles.overlay}></div> */}
-            </div>
+                <div className={styles.overlay}></div>
+            </div> */}
 
-            {/* <div className={styles.content}>
+            <div className={styles.content}>
                 <div className={styles.badge}>
                     One Platform. Unlimited Learning.
                 </div>
 
                 <h1 className={styles.heading}>
-                    Shape Your <span className={styles.italic}>Future with In-Demand Skills</span>
+                     <span className={styles.italic}>Shape Your Future with In- <br /> Demand Skills</span>
                 </h1>
 
                 <p className={styles.description}>
@@ -35,7 +35,7 @@ const HeroSection = () => {
 
                 <Link href="/get-started" className={styles.ctaButton}>
                     Get Start Now
-                    <svg
+                    {/* <svg
                         className={styles.arrowIcon}
                         width="20"
                         height="20"
@@ -49,11 +49,14 @@ const HeroSection = () => {
                             strokeLinecap="round"
                             strokeLinejoin="round"
                         />
-                    </svg>
+                    </svg> */}
+                    <span class="material-symbols-outlined">
+                        arrow_circle_right
+                    </span>
                 </Link>
-            </div> */}
+            </div>
         </section>
     );
 };
 
-export default HeroSection;
+export default HeroSectionTwo;
