@@ -29,8 +29,8 @@ const Header = () => {
           <Image
             src="/assets/images/logo.png"
             alt="Skill Haara"
-            width={180}
-            height={60}
+            width={200}
+            height={90}
             priority
           />
         </Link>
@@ -41,9 +41,8 @@ const Header = () => {
             <Link
               key={link.href}
               href={link.href}
-              className={`${styles.navLink} ${
-                pathname === link.href ? styles.active : ""
-              }`}
+              className={`${styles.navLink} ${pathname === link.href ? styles.active : ""
+                }`}
             >
               {link.label}
             </Link>
@@ -71,9 +70,8 @@ const Header = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`${styles.mobileMenu} ${
-          menuOpen ? styles.showMenu : ""
-        }`}
+        className={`${styles.mobileMenu} ${menuOpen ? styles.showMenu : ""
+          }`}
       >
         {/* Close Button */}
         <button
@@ -89,9 +87,8 @@ const Header = () => {
             <Link
               key={link.href}
               href={link.href}
-              className={`${styles.mobileNavLink} ${
-                pathname === link.href ? styles.active : ""
-              }`}
+              className={`${styles.mobileNavLink} ${pathname === link.href ? styles.active : ""
+                }`}
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
