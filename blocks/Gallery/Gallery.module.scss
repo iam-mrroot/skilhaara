@@ -4,9 +4,11 @@
   padding: 80px 20px;
   background: linear-gradient(180deg, #7b8fd9 0%, #9ba8e0 100%);
   min-height: 100vh;
+  margin-bottom: 80px;
 
   @media (max-width: 768px) {
     padding: 60px 16px;
+    margin-bottom: 60px;
   }
 }
 

@@ -30,7 +30,7 @@ const Header = () => {
             src="/assets/images/logo.png"
             alt="Skill Haara"
             width={200}
-            height={90}
+            height={200}
             priority
           />
         </Link>
