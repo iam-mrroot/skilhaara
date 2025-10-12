@@ -1,7 +1,7 @@
 // components/HeroSection/HeroSection.module.scss
 
 .heroSection {
-  background: linear-gradient(135deg, #5b7cff 0%, #6b8aff 100%);
+  background: #2563eb;
   padding: 100px 20px;
   position: relative;
   overflow: hidden;
@@ -41,8 +41,8 @@
 }
 
 .title {
-  font-size: 52px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 400;
   color: #ffffff;
   margin: 0 0 24px 0;
   line-height: 1.2;
@@ -57,7 +57,7 @@
 }
 
 .description {
-  font-size: 18px;
+  font-size: 16px;
   color: #e0e7ff;
   line-height: 1.7;
   margin: 0 0 36px 0;
@@ -76,7 +76,7 @@
 .ctaButton {
   background-color: #ffffff;
   color: #5b7cff;
-  padding: 16px 48px;
+  padding: 12px 36px;
   border-radius: 50px;
   font-size: 16px;
   font-weight: 600;
@@ -85,8 +85,12 @@
   transition: all 0.3s ease;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 
+  // padding: 8px 32px;
+  // font-size: 15px;
+  // font-weight: 500;
+
   &:hover {
-    transform: translateY(-2px);
+    // transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     background-color: #f9fafb;
   }

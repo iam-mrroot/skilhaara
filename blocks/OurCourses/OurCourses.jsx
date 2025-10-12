@@ -22,11 +22,11 @@ const OurCourses = () => {
                     </div>
 
                     <div className={styles.imageWrapper}>
-                        <img 
+                        {/* <img 
                             src={'/assets/images/growurcarrer.jpg'} 
                             alt="Learning dashboard interface" 
                             className={styles.heroImage}
-                        />
+                        /> */}
                     </div>
                 </div>
             </div>
