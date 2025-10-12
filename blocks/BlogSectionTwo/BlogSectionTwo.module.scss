@@ -17,6 +17,9 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+.badgeDiv {
+  text-align: start;
+}
 
 .header {
   text-align: center;
@@ -33,11 +36,11 @@
 
 .badge {
   display: inline-block;
-  padding: 12px 32px;
+  padding: 12px 70px;
   background: linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 100%);
   border-radius: 50px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   color: #1a1a1a;
   margin-bottom: 24px;
 
@@ -54,7 +57,7 @@
 
 .title {
   font-size: 56px;
-  font-weight: 800;
+  font-weight: 600;
   color: #4b5563;
   line-height: 1.2;
   margin: 0;
@@ -74,16 +77,21 @@
     font-size: 28px;
   }
 }
-
+.mainDivBar {
+  display: flex;
+  justify-content: center;
+}
 .categoriesBar {
+  max-width: 800px;
   display: flex;
   align-items: center;
   gap: 32px;
   background-color: #1a1a1a;
-  padding: 24px 40px;
-  border-radius: 20px;
+  padding: 10px 40px;
+  border-radius: 12px;
   margin-bottom: 60px;
   flex-wrap: wrap;
+  border: 1px solid #2563eb;
 
   @media (max-width: 1024px) {
     gap: 24px;
@@ -105,8 +113,8 @@
 }
 
 .categoriesLabel {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
   color: #ffffff;
   white-space: nowrap;
 
@@ -136,8 +144,8 @@
   background-color: transparent;
   border: none;
   color: #9ca3af;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   cursor: pointer;
   border-radius: 12px;
   transition: all 0.3s ease;
@@ -161,7 +169,7 @@
   &.active {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.15);
-    font-weight: 600;
+    font-weight: 400;
   }
 }
 
@@ -191,21 +199,22 @@
     border-radius: 20px;
   }
 
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  // &:hover {
+  //   transform: translateY(-8px);
+  //   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
 
-    .blogImage {
-      transform: scale(1.05);
-    }
-  }
+  //   .blogImage {
+  //     transform: scale(1.05);
+  //   }
+  // }
 }
 
 .imageWrapper {
   width: 100%;
   height: 280px;
   overflow: hidden;
-  background-color: #c7d2fe;
+  // background-color: #c7d2fe;
+  padding: 20px;
 
   @media (max-width: 768px) {
     height: 240px;
@@ -221,10 +230,11 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
+  border-radius: 25px;
 }
 
 .cardContent {
-  padding: 32px;
+  padding: 20px 32px;
 
   @media (max-width: 768px) {
     padding: 28px;
@@ -238,7 +248,7 @@
 .categoryTag {
   display: inline-block;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: #6b7280;
   margin-bottom: 12px;
 
@@ -248,8 +258,8 @@
 }
 
 .blogTitle {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   color: #1a1a1a;
   line-height: 1.4;
   margin: 0 0 24px 0;
@@ -331,7 +341,7 @@
 
 .blogCard {
   animation: fadeInUp 0.6s ease-out forwards;
-  
+
   @for $i from 1 through 6 {
     &:nth-child(#{$i}) {
       animation-delay: #{$i * 0.1}s;

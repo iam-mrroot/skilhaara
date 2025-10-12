@@ -95,14 +95,16 @@ const BlogSectionTwo = () => {
     return (
         <section className={styles.blogSection}>
             <div className={styles.container}>
+                <div className={styles.badgeDiv}> <span className={styles.badge}>Blog</span></div>
                 <div className={styles.header}>
-                    <span className={styles.badge}>Blog</span>
+
                     <h2 className={styles.title}>
-                        Empower Your Journey with Expert Career Insights
+                        Empower Your Journey with <br /> Expert Career Insights
                     </h2>
                 </div>
 
-                <div className={styles.categoriesBar}>
+                <div className={styles.mainDivBar}>
+                    <div className={styles.categoriesBar}>
                     <span className={styles.categoriesLabel}>Categories</span>
                     <div className={styles.categoriesButtons}>
                         {categories.map((category) => (
@@ -116,6 +118,7 @@ const BlogSectionTwo = () => {
                             </button>
                         ))}
                     </div>
+                </div>
                 </div>
 
                 <div className={styles.blogGrid}>
