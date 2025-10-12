@@ -23,7 +23,7 @@ const OurCourses = () => {
 
                     <div className={styles.imageWrapper}>
                         <img 
-                            src={''} 
+                            src={'/assets/images/growurcarrer.jpg'} 
                             alt="Learning dashboard interface" 
                             className={styles.heroImage}
                         />
