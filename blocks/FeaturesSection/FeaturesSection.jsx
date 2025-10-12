@@ -11,7 +11,7 @@ const FeaturesSection = () => {
                     {/* Left Column - Two Cards */}
                     <div className={styles.cardsColumn}>
                         {/* Rating Card */}
-                        <div className={styles.card}>
+                        <div className={`${styles.card} ${styles.ratingCard}`}>
                             <div className={styles.avatarGroup}>
                                 <div className={styles.avatar}>
                                     <Image src="/assets/images/client.jpg" alt="User 1" width={60} height={60} />
@@ -33,7 +33,7 @@ const FeaturesSection = () => {
                             </div>
 
                             <p className={styles.ratingText}>
-                                4.9/5 rating from 210+ review
+                                4.9/5 rating from 210+ reviews
                             </p>
 
                             <p className={styles.description}>
@@ -46,12 +46,12 @@ const FeaturesSection = () => {
                         </div>
 
                         {/* Learning Path Card */}
-                        <div className={styles.card}>
-                            {/* <div className={styles.iconWrapper}> */}
-                            <div className={styles.avatar}>
-                                <Image src="/assets/images/client.jpg" alt="User 1" width={60} height={60} />
+                        <div className={`${styles.card} ${styles.learningCard}`}>
+                            <div className={styles.iconWrapper}>
+                                <div className={styles.avatar}>
+                                    <Image src="/assets/images/client.jpg" alt="Learning path" width={60} height={60} />
+                                </div>
                             </div>
-                            {/* </div> */}
 
                             <h3 className={styles.cardTitle}>
                                 Road to learning for a successful career and profession
@@ -71,7 +71,7 @@ const FeaturesSection = () => {
                     <div className={styles.videoColumn}>
                         <div className={styles.videoCard}>
                             <img
-                                src="https://images.pexels.com/photos/4143791/pexels-photo-4143791.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                src="/assets/images/FeaturesSection.jpg"
                                 className={styles.video}
                                 alt="Video thumbnail"
                             />
