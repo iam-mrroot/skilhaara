@@ -29,14 +29,18 @@ const ContactForm = () => {
 
     return (
         <section className={styles.contactSection}>
+
             <div className={styles.container}>
+                <h2 className={styles.title}>
+                    Have Any Questions! Send a <br /> Message
+                </h2>
+                 <div className={styles.decorativeDots}></div>
+
                 <div className={styles.formWrapper}>
                     <div className={styles.formContent}>
-                        <div className={styles.decorativeDots}></div>
+                       
 
-                        <h2 className={styles.title}>
-                            Have Any Questions! Send a Message
-                        </h2>
+
 
                         <form onSubmit={handleSubmit} className={styles.form}>
                             <div className={styles.formGroup}>

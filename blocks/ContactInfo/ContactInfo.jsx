@@ -1,4 +1,5 @@
 // components/ContactInfo/ContactInfo.tsx
+import Link from 'next/link';
 import styles from './ContactInfo.module.scss';
 
 const ContactInfo = () => {
@@ -45,7 +46,7 @@ const ContactInfo = () => {
         <section className={styles.contactInfoSection}>
             <div className={styles.container}>
                 {contactDetails.map((detail) => (
-                    <a
+                    <Link
                         key={detail.id}
                         href={detail.link}
                         className={styles.contactCard}
@@ -59,7 +60,7 @@ const ContactInfo = () => {
                             <h3 className={styles.label}>{detail.label}</h3>
                             <p className={styles.value}>{detail.value}</p>
                         </div>
-                    </a>
+                    </Link>
                 ))}
             </div>
         </section>

@@ -32,7 +32,7 @@
   gap: 20px;
   padding: 32px;
   background-color: #ffffff;
-  border: 2px solid #e5e7eb;
+  border: 1px solid #e5e7eb;
   border-radius: 16px;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -48,9 +48,9 @@
   }
 
   &:hover {
-    border-color: #4caf50;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(76, 175, 80, 0.15);
+    // border-color: #4caf50;
+    // transform: translateY(-4px);
+    // box-shadow: 0 8px 24px rgba(76, 175, 80, 0.15);
 
     .iconWrapper {
       transform: scale(1.1);
@@ -108,7 +108,7 @@
 
 .label {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #1a1a1a;
   margin: 0;
 
@@ -123,7 +123,7 @@
 
 .value {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: #1a1a1a;
   margin: 0;
   word-break: break-word;
