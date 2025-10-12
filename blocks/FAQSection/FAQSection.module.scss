@@ -1,16 +1,16 @@
 // components/FAQSection/FAQSection.module.scss
 
 .faqSection {
-  padding: 100px 20px;
+  padding: 80px 20px;
   background-color: #ffffff;
   position: relative;
 
   @media (max-width: 968px) {
-    padding: 80px 20px;
+    padding: 60px 20px;
   }
 
   @media (max-width: 640px) {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 }
 
@@ -207,20 +207,23 @@
 }
 
 .imageColumn {
-  position: sticky;
-  top: 100px;
-
-  @media (max-width: 1024px) {
-    position: relative;
-    top: 0;
-    max-width: 600px;
-    margin: 0 auto;
-  }
+  // position: sticky;
+  // top: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // @media (max-width: 1024px) {
+  //   position: relative;
+  //   top: 0;
+  //   max-width: 600px;
+  //   margin: 0 auto;
+  // }
 }
 
 .faqImage {
   width: 100%;
-  height: 500px;
+  // height: 500px;
   border-radius: 32px;
   object-fit: cover;
   // box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);

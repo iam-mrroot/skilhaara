@@ -7,7 +7,7 @@ const StatsBenefitstwo = () => {
     { value: '30+', label: 'Instructor' },
     { value: '100+', label: 'Students' },
     { value: '30+', label: 'Courses' },
-    { value: '7Y', label: 'Experience' },
+    { value: '10Y', label: 'Experience' },
   ];
 
   const benefits = [

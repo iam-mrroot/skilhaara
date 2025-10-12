@@ -1,15 +1,15 @@
 // components/WhySkillHaara/WhySkillHaara.module.scss
 
 .whySkillHaaraSection {
-  padding: 100px 20px;
+  padding: 80px 20px;
   background-color: #ffffff;
 
   @media (max-width: 968px) {
-    padding: 80px 20px;
+    padding: 60px 20px;
   }
 
   @media (max-width: 640px) {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 }
 

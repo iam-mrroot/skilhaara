@@ -1,8 +1,16 @@
 // components/StatsBenefits/StatsBenefits.module.scss
 
 .statsSection {
-  // padding: 80px 20px;
-  background-color: #fff;
+  padding: 80px 20px;
+  background-color: #ffffff;
+
+  @media (max-width: 968px) {
+    padding: 60px 20px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 40px 20px;
+  }
 }
 
 .container {

@@ -47,7 +47,7 @@ const WhySkillHaara = () => {
                 <div className={styles.contentWrapper}>
                     <div className={styles.imageColumn}>
                         <img
-                            src={"/assets/images/WhySkillHaara.jpg"}
+                            src={"/assets/images/FeaturesSection.jpg"}
                             alt="SkillHaara Instructor"
                             className={styles.instructorImage}
                         />

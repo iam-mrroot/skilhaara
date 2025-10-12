@@ -35,7 +35,7 @@ const TeachingTeam = () => {
                         <div key={member.id} className={styles.teamCard}>
                             <div className={styles.imageWrapper}>
                                 <img
-                                    src={"https://images.pexels.com/photos/2574616/pexels-photo-2574616.jpeg"}
+                                    src={"https://images.pexels.com/photos/15023413/pexels-photo-15023413/free-photo-of-businessman-in-striped-shirt-and-suit-jacket.jpeg?auto=compress&cs=tinysrgb&w=400"}
                                     alt={member.name}
                                     className={styles.memberImage}
                                 />

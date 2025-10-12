@@ -6,41 +6,32 @@ const DesignedToSucceed = () => {
         {
             id: 1,
             icon: (
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <circle cx="20" cy="12" r="4" fill="#5b7cff" />
-                    <circle cx="20" cy="12" r="6" stroke="#5b7cff" strokeWidth="2" fill="none" opacity="0.3" />
-                    <path d="M15 28C15 24.6863 17.6863 22 21 22C24.3137 22 27 24.6863 27 28" stroke="#5b7cff" strokeWidth="2" strokeLinecap="round" />
-                    <rect x="18" y="30" width="4" height="6" rx="1" fill="#5b7cff" />
-                </svg>
+                <span className="material-symbols-outlined" style={{ fontSize: '40px', color: '#5b7cff' }}>
+                    schedule
+                </span>
             ),
-            title: 'Smart Learning',
-            description: 'Built by experts to guide your learning journey',
+            title: 'Flexible Learning',
+            description: 'Learn when it works for you anytime, anywhere, at your own pace.',
         },
         {
             id: 2,
             icon: (
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <circle cx="20" cy="12" r="4" fill="#5b7cff" />
-                    <circle cx="20" cy="12" r="6" stroke="#5b7cff" strokeWidth="2" fill="none" opacity="0.3" />
-                    <path d="M15 28C15 24.6863 17.6863 22 21 22C24.3137 22 27 24.6863 27 28" stroke="#5b7cff" strokeWidth="2" strokeLinecap="round" />
-                    <rect x="18" y="30" width="4" height="6" rx="1" fill="#5b7cff" />
-                </svg>
+                <span className="material-symbols-outlined" style={{ fontSize: '40px', color: '#5b7cff' }}>
+                    school
+                </span>
             ),
-            title: 'Smart Learning',
-            description: 'Built by experts to guide your learning journey',
+            title: 'Expert Instructors',
+            description: 'Gain insights and mentorship from experienced professionals who guide your learning journey.',
         },
         {
             id: 3,
             icon: (
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <circle cx="20" cy="12" r="4" fill="#5b7cff" />
-                    <circle cx="20" cy="12" r="6" stroke="#5b7cff" strokeWidth="2" fill="none" opacity="0.3" />
-                    <path d="M15 28C15 24.6863 17.6863 22 21 22C24.3137 22 27 24.6863 27 28" stroke="#5b7cff" strokeWidth="2" strokeLinecap="round" />
-                    <rect x="18" y="30" width="4" height="6" rx="1" fill="#5b7cff" />
-                </svg>
+                <span className="material-symbols-outlined" style={{ fontSize: '40px', color: '#5b7cff' }}>
+                    workspace_premium
+                </span>
             ),
-            title: 'Smart Learning',
-            description: 'Built by experts to guide your learning journey',
+            title: 'Recognized Certificates',
+            description: 'Earn industry-recognized certificates to boost your career profile.',
         },
     ];
 
@@ -55,7 +46,7 @@ const DesignedToSucceed = () => {
                 <div className={styles.contentGrid}>
                     <div className={styles.imageColumn}>
                         <img
-                            src={"https://images.pexels.com/photos/5427817/pexels-photo-5427817.jpeg"}
+                            src={"/assets/images/whylearnusone.jpg"}
                             alt="Study materials and desk setup"
                             className={styles.columnImage}
                         />
@@ -81,7 +72,7 @@ const DesignedToSucceed = () => {
 
                     <div className={styles.imageColumnWithButtons}>
                         <img
-                            src={"https://images.pexels.com/photos/5427817/pexels-photo-5427817.jpeg"}
+                            src={"/assets/images/whylearnustwo.jpg"}
                             alt="Student learning with books"
                             className={styles.columnImage}
                         />

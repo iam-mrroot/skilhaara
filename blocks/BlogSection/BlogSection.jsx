@@ -5,36 +5,36 @@ const BlogSection = () => {
     const blogPosts = [
         {
             id: 1,
-            image: "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg",
+            image: "http://images.pexels.com/photos/8837787/pexels-photo-8837787.jpeg?auto=compress&cs=tinysrgb&w=400",
             category: 'Tools',
             title: 'Why One-Click Deployment Is a Game Changer for AI-Powered Apps',
             author: {
                 name: 'NEETHU',
-                avatar: "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg",
+                avatar: "http://images.pexels.com/photos/8837787/pexels-photo-8837787.jpeg?auto=compress&cs=tinysrgb&w=400",
             },
             date: 'June 30,2025',
             readTime: '5 min read',
         },
         {
             id: 2,
-            image: "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg",
+            image: "http://images.pexels.com/photos/8837787/pexels-photo-8837787.jpeg?auto=compress&cs=tinysrgb&w=400",
             category: 'Tools',
             title: 'Why One-Click Deployment Is a Game Changer for AI-Powered Apps',
             author: {
                 name: 'NEETHU',
-                avatar: "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg",
+                avatar: "http://images.pexels.com/photos/8837787/pexels-photo-8837787.jpeg?auto=compress&cs=tinysrgb&w=400",
             },
             date: 'June 30,2025',
             readTime: '5 min read',
         },
         {
             id: 3,
-            image: "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg",
+            image: "http://images.pexels.com/photos/8837787/pexels-photo-8837787.jpeg?auto=compress&cs=tinysrgb&w=400",
             category: 'Tools',
             title: 'Why One-Click Deployment Is a Game Changer for AI-Powered Apps',
             author: {
                 name: 'NEETHU',
-                avatar: "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg",
+                avatar: "http://images.pexels.com/photos/8837787/pexels-photo-8837787.jpeg?auto=compress&cs=tinysrgb&w=400",
             },
             date: 'June 30,2025',
             readTime: '5 min read',

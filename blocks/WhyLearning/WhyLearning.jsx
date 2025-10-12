@@ -8,33 +8,34 @@ const WhyLearning = () => {
     const features = [
         {
             id: 1,
-            icon: <PeopleAltOutlined className="feature-icon" />,
+            icon: <PeopleAltOutlined style={{ color: "#2563eb" }} className="feature-icon" />,
             title: "World-Class Teachers",
             description:
                 "Explore our top-rated courses crafted to equip you with real-world skills and in-demand competencies for personal and professional growth.",
         },
         {
             id: 2,
-            icon: <LanguageOutlined className="feature-icon" />,
+            icon: <LanguageOutlined style={{ color: "#2563eb" }} className="feature-icon" />,
             title: "Global Students Community",
             description:
                 "Explore our top-rated courses crafted to equip you with real-world skills and in-demand competencies for personal and professional growth.",
         },
         {
             id: 3,
-            icon: <MenuBookOutlined className="feature-icon" />,
+            icon: <MenuBookOutlined style={{ color: "#2563eb" }} className="feature-icon" />,
             title: "Top Notch Courses",
             description:
                 "Explore our top-rated courses crafted to equip you with real-world skills and in-demand competencies for personal and professional growth.",
         },
         {
             id: 4,
-            icon: <ChatOutlined className="feature-icon" />,
+            icon: <ChatOutlined style={{ color: "#2563eb" }} className="feature-icon" />,
             title: "One-on-One Mentorship",
             description:
                 "Explore our top-rated courses crafted to equip you with real-world skills and in-demand competencies for personal and professional growth.",
         },
     ];
+
 
 
     return (

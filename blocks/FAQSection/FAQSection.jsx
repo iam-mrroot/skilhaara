@@ -96,7 +96,7 @@ const FAQSection = () => {
 
                     <div className={styles.imageColumn}>
                         <img
-                            src={"https://images.pexels.com/photos/1326947/pexels-photo-1326947.jpeg"}
+                            src={"/assets/images/faqsection.jpg"}
                             alt="Workspace with learning materials"
                             className={styles.faqImage}
                         />
