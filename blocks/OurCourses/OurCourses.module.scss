@@ -2,16 +2,16 @@
 
 .heroSection {
   background: #2563eb;
-  padding: 100px 20px;
   position: relative;
   overflow: hidden;
+  padding: 80px 20px;
 
   @media (max-width: 968px) {
-    padding: 80px 20px;
+    padding: 60px 20px;
   }
 
   @media (max-width: 640px) {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 }
 

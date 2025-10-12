@@ -13,7 +13,7 @@ const OurCourses = () => {
                             Start learning with Academy.
                         </h1>
                         <p className={styles.description}>
-                            Explore our top-rated courses crafted to equip you with real-world 
+                            Explore our top-rated courses crafted to equip you with real-world
                             skills and in-demand competencies for personal and professional growth.
                         </p>
                         <button className={styles.ctaButton}>
@@ -22,9 +22,9 @@ const OurCourses = () => {
                     </div>
 
                     <div className={styles.imageWrapper}>
-                        <img 
-                            src={'/assets/images/growyourcarrer.png'} 
-                            alt="Learning dashboard interface" 
+                        <img
+                            src={'/assets/images/growyourcarrer.png'}
+                            alt="Learning dashboard interface"
                             className={styles.heroImage}
                         />
                     </div>
