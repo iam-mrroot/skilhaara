@@ -48,9 +48,9 @@ const FeaturesSection = () => {
                         {/* Learning Path Card */}
                         <div className={styles.card}>
                             {/* <div className={styles.iconWrapper}> */}
-                                <div className={styles.avatar}>
-                                    <Image src="/assets/images/client.jpg" alt="User 1" width={60} height={60} />
-                                </div>
+                            <div className={styles.avatar}>
+                                <Image src="/assets/images/client.jpg" alt="User 1" width={60} height={60} />
+                            </div>
                             {/* </div> */}
 
                             <h3 className={styles.cardTitle}>
