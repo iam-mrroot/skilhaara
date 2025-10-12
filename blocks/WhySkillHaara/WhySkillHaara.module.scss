@@ -42,10 +42,10 @@
 
 .instructorImage {
   width: 100%;
-  height: auto;
+  height: 600px;
   border-radius: 32px;
   object-fit: cover;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  // box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 
   @media (max-width: 968px) {
     border-radius: 24px;
@@ -61,19 +61,21 @@
 }
 
 .badge {
-  display: inline-block;
+  color: #2563eb;
   background-color: #dbeafe;
-  color: #1a1a1a;
-  padding: 8px 20px;
   border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 20px;
   font-size: 14px;
   font-weight: 600;
+  display: inline-block;
   margin-bottom: 24px;
 }
 
 .title {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 500;
   color: #1a1a1a;
   margin: 0 0 48px 0;
   line-height: 1.3;
@@ -94,18 +96,20 @@
 }
 
 .featureBadge {
-  display: inline-block;
+  color: #2563eb;
   background-color: #dbeafe;
-  color: #1a1a1a;
-  padding: 8px 20px;
   border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 20px;
   font-size: 14px;
   font-weight: 600;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
 .featureDescription {
-  font-size: 18px;
+  font-size: 25px;
   color: #1a1a1a;
   line-height: 1.6;
   margin: 0 0 32px 0;
@@ -133,7 +137,7 @@
 
   &:hover {
     background-color: #e5e7eb;
-    transform: translateX(4px);
+    // transform: translateX(4px);
   }
 
   @media (max-width: 640px) {
@@ -149,6 +153,13 @@
   align-items: center;
   justify-content: center;
 
+  .iconDiv {
+    width: 25px;
+    height: 14px;
+    background-color: rgb(173, 166, 166);
+    border-radius: 50px;
+  }
+
   svg {
     width: 24px;
     height: 24px;
@@ -157,7 +168,7 @@
 
 .featureTitle {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #1a1a1a;
   margin: 0;
   line-height: 1.4;

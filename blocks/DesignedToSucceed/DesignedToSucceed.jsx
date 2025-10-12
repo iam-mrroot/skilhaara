@@ -54,9 +54,9 @@ const DesignedToSucceed = () => {
 
                 <div className={styles.contentGrid}>
                     <div className={styles.imageColumn}>
-                        <img 
-                            src={"https://images.pexels.com/photos/5427817/pexels-photo-5427817.jpeg"} 
-                            alt="Study materials and desk setup" 
+                        <img
+                            src={"https://images.pexels.com/photos/5427817/pexels-photo-5427817.jpeg"}
+                            alt="Study materials and desk setup"
                             className={styles.columnImage}
                         />
                     </div>
@@ -80,9 +80,9 @@ const DesignedToSucceed = () => {
                     </div>
 
                     <div className={styles.imageColumnWithButtons}>
-                        <img 
-                            src={"https://images.pexels.com/photos/5427817/pexels-photo-5427817.jpeg"} 
-                            alt="Student learning with books" 
+                        <img
+                            src={"https://images.pexels.com/photos/5427817/pexels-photo-5427817.jpeg"}
+                            alt="Student learning with books"
                             className={styles.columnImage}
                         />
                     </div>

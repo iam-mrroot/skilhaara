@@ -47,7 +47,7 @@ const WhySkillHaara = () => {
                 <div className={styles.contentWrapper}>
                     <div className={styles.imageColumn}>
                         <img
-                            src={"https://images.pexels.com/photos/5428148/pexels-photo-5428148.jpeg"}
+                            src={"/assets/images/WhySkillHaara.jpg"}
                             alt="SkillHaara Instructor"
                             className={styles.instructorImage}
                         />
@@ -74,7 +74,8 @@ const WhySkillHaara = () => {
                                 {features.map((feature) => (
                                     <div key={feature.id} className={styles.featureItem}>
                                         <div className={styles.iconWrapper}>
-                                            {feature.icon}
+                                            {/* {feature.icon} */}
+                                            <div className={styles.iconDiv}></div>
                                         </div>
                                         <h3 className={styles.featureTitle}>{feature.title}</h3>
                                     </div>
