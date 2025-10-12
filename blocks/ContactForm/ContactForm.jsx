@@ -34,11 +34,11 @@ const ContactForm = () => {
                 <h2 className={styles.title}>
                     Have Any Questions! Send a <br /> Message
                 </h2>
-                 <div className={styles.decorativeDots}></div>
+                <div className={styles.decorativeDots}></div>
 
                 <div className={styles.formWrapper}>
                     <div className={styles.formContent}>
-                       
+
 
 
 
@@ -126,7 +126,7 @@ const ContactForm = () => {
 
                     <div className={styles.imageWrapper}>
                         <img
-                            src="https://images.pexels.com/photos/5256816/pexels-photo-5256816.jpeg"
+                            src="/assets/images/gallery.jpg"
                             alt="Customer support representative"
                             className={styles.image}
                         />

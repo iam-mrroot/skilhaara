@@ -1,5 +1,6 @@
 // components/Gallery/Gallery.tsx
 import { useState } from 'react';
+import Image from 'next/image';
 import styles from './Gallery.module.scss';
 
 const Gallery = () => {
@@ -15,14 +16,14 @@ const Gallery = () => {
             { id: 6, image: "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg" },
             { id: 7, image: "https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg" },
             { id: 8, image: "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg" },
-            { id: 1, image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" },
-            { id: 2, image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" },
-            { id: 3, image: "https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg" },
-            { id: 4, image: "https://images.pexels.com/photos/3184294/pexels-photo-3184294.jpeg" },
-            { id: 5, image: "https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg" },
-            { id: 6, image: "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg" },
-            { id: 7, image: "https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg" },
-            { id: 8, image: "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg" },
+            { id: 9, image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" },
+            { id: 10, image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" },
+            { id: 11, image: "https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg" },
+            { id: 12, image: "https://images.pexels.com/photos/3184294/pexels-photo-3184294.jpeg" },
+            { id: 13, image: "https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg" },
+            { id: 14, image: "https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg" },
+            { id: 15, image: "https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg" },
+            { id: 16, image: "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg" },
         ],
         newLaunch: [
             { id: 1, image: "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg" },
@@ -81,11 +82,15 @@ const Gallery = () => {
                 <div className={styles.galleryGrid}>
                     {galleries[activeTab].map((item) => (
                         <div key={item.id} className={styles.galleryItem}>
-                            <img
+                            <Image
                                 src={item.image}
                                 alt={`${activeTab} ${item.id}`}
                                 className={styles.galleryImage}
+                                width={300}
+                                height={200}
                                 loading="lazy"
+                                placeholder="blur"
+                                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                             />
                         </div>
                     ))}
