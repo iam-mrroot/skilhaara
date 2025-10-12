@@ -15,21 +15,21 @@
 }
 
 .badge {
-  display: inline-block;
-  background-color: #dbeafe;
-  color: #2563eb;
-  padding: 8px 20px;
+  color: rgb(37, 99, 235);
+  background-color: rgb(219, 234, 254);
   border-radius: 20px;
+  width: fit-content;
+  padding: 8px 20px;
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .title {
-  font-size: 42px;
-  font-weight: 700;
   color: #1a1a1a;
   margin: 0;
+  font-size: 38px;
+  font-weight: 500;
 
   @media (max-width: 768px) {
     font-size: 32px;

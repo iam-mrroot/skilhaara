@@ -11,15 +11,15 @@ const CTASection = () => {
             Let's Join the<br />
             Global Classroom
           </h2>
-          
+
           <p className={styles.description}>
-            Our platform offers a wide range of courses and resources designed to help you acquire new competency.
+            Our platform offers a wide range of courses and resources <br /> designed to help you acquire new competency.
           </p>
 
           <div className={styles.buttonGroup}>
             <Link href="/join" className={styles.primaryButton}>
               Join Now
-              <svg className={styles.icon} width="24" height="24" viewBox="0 0 24 24" fill="none">
+              {/* <svg className={styles.icon} width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
                 <path 
                   d="M10 8L14 12L10 16" 
@@ -28,21 +28,27 @@ const CTASection = () => {
                   strokeLinecap="round" 
                   strokeLinejoin="round"
                 />
-              </svg>
+              </svg> */}
+              <span className={`${styles.icon} material-symbols-outlined`}>
+                arrow_circle_right
+              </span>
             </Link>
 
             <Link href="/courses" className={styles.secondaryButton}>
               Explore our courses
-              <svg className={styles.icon} width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-                <path 
-                  d="M10 8L14 12L10 16" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
+              {/* <svg className={styles.icon} width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+                <path
+                  d="M10 8L14 12L10 16"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
                   strokeLinejoin="round"
                 />
-              </svg>
+              </svg> */}
+              <span className={`${styles.icon} material-symbols-outlined`}>
+                arrow_circle_right
+              </span>
             </Link>
           </div>
         </div>
