@@ -2,30 +2,28 @@
 
 import styles from './LandingTwoSection.module.scss';
 
-const LandingTwoSection = () => {
+const LandingTwoSection = ({ landingTwoSectionData }) => {
     return (
         <section className={styles.aboutSection}>
             <div className={styles.overlay} />
             <div className={styles.backgroundImage}>
-                <img src={'https://images.pexels.com/photos/5428148/pexels-photo-5428148.jpeg'} alt="Learning environment" />
+                <img src={landingTwoSectionData?.backgroundImage} alt="Learning environment" />
             </div>
 
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <span className={styles.badge}>About us</span>
+                    <span className={styles.badge}>{landingTwoSectionData?.tag}</span>
 
                     <h2 className={styles.title}>
-                        Who we are & why we help you move forward
+                        {landingTwoSectionData?.title}
                     </h2>
 
                     <p className={styles.description}>
-                        We focus on practical learning covering real-world topics through simple,
-                        easy-to-follow lessons, guided by industry experts to ensure you gain skills
-                        that truly matter.
+                        {landingTwoSectionData?.description}
                     </p>
 
                     <button className={styles.ctaButton}>
-                        Get Start Now
+                        {landingTwoSectionData?.buttonText}
                         {/* <svg
                             width="20"
                             height="20"

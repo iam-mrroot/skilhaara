@@ -9,11 +9,22 @@ import WhySkillHaara from '@/blocks/WhySkillHaara/WhySkillHaara'
 import React from 'react'
 
 export default function AboutPage() {
+
+    const landingTwoSectionData = {
+        tag: "About us",
+        title: "Who we are & why we help you move forward",
+        description:
+            "We focus on practical learning covering real-world topics through simple, easy-to-follow lessons, guided by industry experts to ensure you gain skills that truly matter.",
+        buttonText: "Get Start Now",
+        backgroundImage: "/assets/images/aboutpage.jpg",
+    };
+
+
     return (
         <>
-            <LandingTwoSection />
+            <LandingTwoSection landingTwoSectionData={landingTwoSectionData} />
             <WhySkillHaara />
-            <StatsBenefitstwo/>
+            <StatsBenefitstwo />
             <DesignedToSucceed />
             <TeachingTeam />
             <Testimonials />
