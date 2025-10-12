@@ -1,16 +1,16 @@
 // components/LatestCourses/LatestCourses.module.scss
 
 .latestCoursesSection {
-  padding: 100px 20px;
-  background-color: #f9fafb;
+  padding: 80px 20px;
   position: relative;
+  background-color: #ffffff;
 
   @media (max-width: 968px) {
-    padding: 80px 20px;
+    padding: 60px 20px;
   }
 
   @media (max-width: 640px) {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 }
 
@@ -22,7 +22,7 @@
 .title {
   font-size: 48px;
   font-weight: 500;
-  color: #4b5563;
+  color: #1a1a1a;
   margin: 0 0 64px 0;
 
   @media (max-width: 768px) {
@@ -162,60 +162,4 @@
     color: #5b7cff;
     transform: translateX(4px);
   }
-}
-
-.floatingButtons {
-  position: fixed;
-  right: 32px;
-  bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  z-index: 1000;
-
-  @media (max-width: 640px) {
-    right: 20px;
-    bottom: 20px;
-  }
-}
-
-.whatsappButton,
-.phoneButton {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-
-  @media (max-width: 640px) {
-    width: 56px;
-    height: 56px;
-
-    svg {
-      width: 28px;
-      height: 28px;
-    }
-  }
-
-  &:hover {
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  }
-
-  &:active {
-    transform: translateY(-2px) scale(1);
-  }
-}
-
-.whatsappButton {
-  background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%);
-}
-
-.phoneButton {
-  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
 }
