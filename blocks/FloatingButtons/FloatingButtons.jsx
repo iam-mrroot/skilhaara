@@ -8,7 +8,7 @@ export default function FloatingButtons() {
   return (
     <div className={styles.floatingButtons}>
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/919539128888"
         target="_blank"
         rel="noopener noreferrer"
         className={`${styles.button} ${styles.whatsapp}`}
@@ -18,7 +18,7 @@ export default function FloatingButtons() {
       </a>
 
       <a
-        href="tel:+919876543210"
+        href="tel:+919539128888"
         className={`${styles.button} ${styles.phone}`}
         aria-label="Call Us"
       >
