@@ -66,7 +66,7 @@ const TeachingTeam = () => {
                 </div>
             </div>
 
-            
+
         </section>
     );
 };

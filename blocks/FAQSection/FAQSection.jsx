@@ -55,7 +55,7 @@ const FAQSection = () => {
                                         aria-expanded={openIndex === index}
                                     >
                                         <div className={styles.iconWrapper}>
-                                            <svg
+                                            {/* <svg
                                                 width="24"
                                                 height="24"
                                                 viewBox="0 0 24 24"
@@ -63,7 +63,9 @@ const FAQSection = () => {
                                                 className={styles.icon}
                                             >
                                                 <circle cx="12" cy="12" r="10" stroke="#6b7280" strokeWidth="2" />
-                                            </svg>
+                                            </svg> */}
+                                            <div className={styles.iconDiv}></div>
+
                                         </div>
                                         <span className={styles.faqQuestion}>{faq.question}</span>
                                         <svg
