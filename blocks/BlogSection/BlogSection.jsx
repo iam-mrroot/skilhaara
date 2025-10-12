@@ -84,7 +84,7 @@ const BlogSection = () => {
                 </div>
             </div>
 
-            <div className={styles.floatingButtons}>
+            {/* <div className={styles.floatingButtons}>
                 <a
                     href="https://wa.me/your-number"
                     target="_blank"
@@ -106,7 +106,7 @@ const BlogSection = () => {
                         <path d="M10.8 5.6C10.4 5.6 10 5.8 9.8 6.2L7.4 10.4C7 11 7.2 11.8 7.8 12.2C9.4 13.4 10.8 14.8 12 16.4C13.2 18 14.2 19.8 15 21.6C15.2 22.2 15.8 22.6 16.4 22.6C16.6 22.6 16.8 22.6 17 22.4L21 20C21.6 19.6 21.8 18.8 21.4 18.2L19 14.8C18.6 14.2 17.8 14 17.2 14.4L15.6 15.4C14.8 13.6 13.6 12 12 10.8L13 9.2C13.4 8.6 13.2 7.8 12.6 7.4L9.2 5C9 5.8 8.8 5.6 8.6 5.6H10.8Z" fill="white" />
                     </svg>
                 </a>
-            </div>
+            </div> */}
         </section>
     );
 };
