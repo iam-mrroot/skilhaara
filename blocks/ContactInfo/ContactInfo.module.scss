@@ -2,10 +2,14 @@
 
 .contactInfoSection {
   padding: 80px 20px;
-  background-color: #ffffff;
+  background-color: #fff;
 
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     padding: 60px 20px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 40px 20px;
   }
 }
 

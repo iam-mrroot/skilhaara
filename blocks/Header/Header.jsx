@@ -1,60 +1,115 @@
-// components/Header/Header.tsx
-import Link from 'next/link';
-import Image from 'next/image';
-import styles from './Header.module.scss';
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { FiMenu, FiX } from "react-icons/fi";
+import styles from "./Header.module.scss";
 
 const Header = () => {
-    return (
-        <header className={styles.header}>
-            <div className={styles.container}>
-                <Link href="/" className={styles.logo}>
-                    <Image
-                        src="/logo.png"
-                        alt="Skill Haara"
-                        width={180}
-                        height={60}
-                        priority
-                    />
-                </Link>
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
-                <nav className={styles.nav}>
-                    <Link href="/" className={styles.navLink}>
-                        Home
-                    </Link>
-                    <Link href="/about" className={styles.navLink}>
-                        About
-                    </Link>
-                    <Link href="/courses" className={styles.navLink}>
-                        Courses
-                    </Link>
-                    <Link href="/gallery" className={styles.navLink}>
-                        Gallery
-                    </Link>
-                    <Link href="/brouchers" className={styles.navLink}>
-                        Brouchers
-                    </Link>
-                    <Link href="/certificate" className={styles.navLink}>
-                        Certificate
-                    </Link>
-                    <Link href="/contact" className={styles.navLink}>
-                        Contact
-                    </Link>
-                    <Link href="/blog" className={styles.navLink}>
-                        Blog
-                    </Link>
-                </nav>
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/courses", label: "Courses" },
+    { href: "/gallery", label: "Gallery" },
+    { href: "/brouchers", label: "Brouchers" },
+    { href: "/certificate", label: "Certificate" },
+    { href: "/contact", label: "Contact" },
+    { href: "/blog", label: "Blog" },
+  ];
 
-                <div className={styles.authButtons}>
-                    <Link href="/signup" className={styles.signupBtn}>
-                        SignUp
-                    </Link>
-                    <Link href="/login" className={styles.loginBtn}>
-                        LogIn
-                    </Link>
-                </div>
-            </div>
-        </header>
-    );
+  return (
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <Link href="/" className={styles.logo}>
+          <Image
+            src="/assets/images/logo.png"
+            alt="Skill Haara"
+            width={180}
+            height={60}
+            priority
+          />
+        </Link>
+
+        {/* Desktop Nav */}
+        <nav className={styles.nav}>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`${styles.navLink} ${
+                pathname === link.href ? styles.active : ""
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className={styles.authButtons}>
+          <Link href="/signup" className={styles.signupBtn}>
+            SignUp
+          </Link>
+          <Link href="/login" className={styles.loginBtn}>
+            LogIn
+          </Link>
+        </div>
+
+        {/* Mobile Hamburger */}
+        <button
+          className={styles.menuButton}
+          onClick={() => setMenuOpen(true)}
+          aria-label="Open Menu"
+        >
+          <FiMenu size={26} />
+        </button>
+      </div>
+
+      {/* Mobile Drawer */}
+      <div
+        className={`${styles.mobileMenu} ${
+          menuOpen ? styles.showMenu : ""
+        }`}
+      >
+        {/* Close Button */}
+        <button
+          className={styles.closeButton}
+          onClick={() => setMenuOpen(false)}
+          aria-label="Close Menu"
+        >
+          <FiX size={26} />
+        </button>
+
+        <nav className={styles.mobileNav}>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`${styles.mobileNavLink} ${
+                pathname === link.href ? styles.active : ""
+              }`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className={styles.mobileAuth}>
+          <Link href="/signup" className={styles.signupBtn} onClick={() => setMenuOpen(false)}>
+            SignUp
+          </Link>
+          <Link href="/login" className={styles.loginBtn} onClick={() => setMenuOpen(false)}>
+            LogIn
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
