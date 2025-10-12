@@ -1,4 +1,5 @@
 // components/LatestCourses/LatestCourses.tsx
+import Link from 'next/link';
 import styles from './LatestCourses.module.scss';
 
 const LatestCourses = () => {
@@ -24,7 +25,7 @@ const LatestCourses = () => {
             description: 'Transform imagination into reality—master illustration, garment construction, Aari embroidery, CAD pattern making, and boutique management to shape your future in fashion.',
             level: 'Level',
         },
-          {
+        {
             id: 1,
             image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg",
             title: 'Information Technology & Networking',
@@ -82,9 +83,11 @@ const LatestCourses = () => {
                                         </svg>
                                         <span className={styles.levelText}>{course.level}</span>
                                     </div>
-                                    <button className={styles.learnMoreButton}>
-                                        Learn more
-                                    </button>
+                                    <Link href={'/contact'}>
+                                        <button className={styles.learnMoreButton}>
+                                            Learn more
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +95,7 @@ const LatestCourses = () => {
                 </div>
             </div>
 
-         
+
         </section>
     );
 };

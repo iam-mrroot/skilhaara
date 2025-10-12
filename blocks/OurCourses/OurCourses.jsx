@@ -1,4 +1,5 @@
 // components/HeroSection/HeroSection.tsx
+import Link from 'next/link';
 import styles from './OurCourses.module.scss';
 // import heroImage from '@/assets/hero-image.png'; // Adjust path as needed
 
@@ -16,9 +17,12 @@ const OurCourses = () => {
                             Explore our top-rated courses crafted to equip you with real-world
                             skills and in-demand competencies for personal and professional growth.
                         </p>
-                        <button className={styles.ctaButton}>
-                            Our Courses
-                        </button>
+                        <Link href={'/courses'}>
+                            <button className={styles.ctaButton}>
+                                Our Courses
+                            </button>
+                        </Link>
+
                     </div>
 
                     <div className={styles.imageWrapper}>

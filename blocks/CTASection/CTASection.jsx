@@ -17,7 +17,7 @@ const CTASection = () => {
           </p>
 
           <div className={styles.buttonGroup}>
-            <Link href="/join" className={styles.primaryButton}>
+            <Link href="/contact" className={styles.primaryButton}>
               Join Now
               {/* <svg className={styles.icon} width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>

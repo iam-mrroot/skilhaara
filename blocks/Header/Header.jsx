@@ -50,10 +50,10 @@ const Header = () => {
         </nav>
 
         <div className={styles.authButtons}>
-          <Link href="/signup" className={styles.signupBtn}>
+          <Link href="/contact" className={styles.signupBtn}>
             SignUp
           </Link>
-          <Link href="/login" className={styles.loginBtn}>
+          <Link href="/contact" className={styles.loginBtn}>
             LogIn
           </Link>
         </div>
@@ -97,10 +97,10 @@ const Header = () => {
         </nav>
 
         <div className={styles.mobileAuth}>
-          <Link href="/signup" className={styles.signupBtn} onClick={() => setMenuOpen(false)}>
+          <Link href="/contact" className={styles.signupBtn} onClick={() => setMenuOpen(false)}>
             SignUp
           </Link>
-          <Link href="/login" className={styles.loginBtn} onClick={() => setMenuOpen(false)}>
+          <Link href="/contact" className={styles.loginBtn} onClick={() => setMenuOpen(false)}>
             LogIn
           </Link>
         </div>

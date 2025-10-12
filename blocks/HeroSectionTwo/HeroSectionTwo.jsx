@@ -33,7 +33,7 @@ const HeroSectionTwo = () => {
                     acquire new competencies and improve your employability.
                 </p>
 
-                <Link href="/get-started" className={styles.ctaButton}>
+                <Link href="/contact" className={styles.ctaButton}>
                     Get Start Now
                     {/* <svg
                         className={styles.arrowIcon}

@@ -1,5 +1,6 @@
 
 
+import Link from 'next/link';
 import styles from './LandingTwoSection.module.scss';
 
 const LandingTwoSection = ({ landingTwoSectionData }) => {
@@ -22,9 +23,10 @@ const LandingTwoSection = ({ landingTwoSectionData }) => {
                         {landingTwoSectionData?.description}
                     </p>
 
-                    <button className={styles.ctaButton}>
-                        {landingTwoSectionData?.buttonText}
-                        {/* <svg
+                    <Link href={'/contact'}>
+                        <button className={styles.ctaButton}>
+                            {landingTwoSectionData?.buttonText}
+                            {/* <svg
                             width="20"
                             height="20"
                             viewBox="0 0 20 20"
@@ -39,10 +41,11 @@ const LandingTwoSection = ({ landingTwoSectionData }) => {
                                 strokeLinejoin="round"
                             />
                         </svg> */}
-                        <span className={`${styles.icon} material-symbols-outlined`}>
-                            arrow_circle_right
-                        </span>
-                    </button>
+                            <span className={`${styles.icon} material-symbols-outlined`}>
+                                arrow_circle_right
+                            </span>
+                        </button>
+                    </Link>
                 </div>
             </div>
 
