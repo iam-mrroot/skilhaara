@@ -1,0 +1,127 @@
+// components/OutcomesCertificates/OutcomesCertificates.module.scss
+
+.outcomesSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+
+  @media (max-width: 968px) {
+    padding: 60px 20px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 48px 20px;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.outcomesBlock {
+  margin-bottom: 80px;
+
+  @media (max-width: 968px) {
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: 640px) {
+    margin-bottom: 56px;
+  }
+}
+
+.certificatesBlock {
+  // No additional margin needed for last section
+}
+
+.mainTitle {
+  color: #000;
+  margin: 0;
+  font-size: 38px;
+  font-weight: 600;
+  margin: 0 0 50px 0;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+.description {
+  font-size: 17px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 100%;
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+}
+
+.certificatesList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (max-width: 640px) {
+    gap: 20px;
+  }
+}
+
+.certificateItem {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+
+  @media (max-width: 640px) {
+    gap: 14px;
+  }
+}
+
+.checkIcon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5b7cff;
+  margin-top: 2px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: 640px) {
+    width: 22px;
+    height: 22px;
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+.certificateContent {
+  flex: 1;
+  font-size: 17px;
+  color: #1a1a1a;
+  line-height: 1.65;
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+  }
+}
+
+.certificateTitle {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.certificateDescription {
+  font-weight: 400;
+  color: #4b5563;
+}

@@ -1,0 +1,146 @@
+// components/LearningWorks/LearningWorks.module.scss
+
+.learningWorksSection {
+  padding: 80px 20px;
+  background-color: #ffffff;
+
+  @media (max-width: 968px) {
+    padding: 60px 20px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 48px 20px;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+
+  @media (max-width: 1200px) {
+    gap: 48px;
+  }
+
+  @media (max-width: 968px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (max-width: 640px) {
+    gap: 24px;
+  }
+}
+
+.card {
+  background-color: #f8f9fa;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 36px 40px;
+
+  @media (max-width: 968px) {
+    padding: 32px 36px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 28px 24px;
+    border-radius: 12px;
+  }
+}
+
+.cardTitle {
+  font-size: 28px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 24px 0;
+  line-height: 1.3;
+
+  @media (max-width: 968px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.bulletList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (max-width: 640px) {
+    gap: 14px;
+  }
+}
+
+.bulletItem {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.7;
+  padding-left: 24px;
+  position: relative;
+
+  &::before {
+    content: "•";
+    position: absolute;
+    left: 8px;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 15px;
+    padding-left: 20px;
+
+    &::before {
+      left: 6px;
+    }
+  }
+}
+
+.rightColumn {
+  position: sticky;
+  top: 100px;
+
+  @media (max-width: 968px) {
+    position: relative;
+    top: 0;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  border-radius: 20px;
+  overflow: hidden;
+  // box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 640px) {
+    padding-bottom: 80%;
+    border-radius: 16px;
+  }
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}

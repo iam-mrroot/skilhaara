@@ -1,0 +1,160 @@
+// components/LatestCourses/LatestCourses.module.scss
+
+.latestCoursesSection {
+  padding: 80px 20px;
+  position: relative;
+  background-color: #ffffff;
+
+  @media (max-width: 968px) {
+    padding: 60px 20px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 40px 20px;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #000;
+  margin: 0;
+  font-size: 38px;
+  font-weight: 600;
+  margin: 0 0 50px 0;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.courseCard {
+  background-color: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+
+  // &:hover {
+  //   transform: translateY(-8px);
+  //   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+
+  //   .courseImage {
+  //     transform: scale(1.05);
+  //   }
+  // }
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background-color: #e5e7eb;
+
+  @media (max-width: 640px) {
+    height: 240px;
+  }
+}
+
+.courseImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cardContent {
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (max-width: 640px) {
+    padding: 28px 24px;
+  }
+}
+
+.courseTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.3;
+
+  @media (max-width: 640px) {
+    font-size: 20px;
+  }
+}
+
+.courseDescription {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+
+  @media (max-width: 640px) {
+    font-size: 14px;
+  }
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 8px;
+}
+
+.levelInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.levelIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.levelText {
+  font-size: 15px;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.learnMoreButton {
+  background: none;
+  border: none;
+  color: #1a1a1a;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #5b7cff;
+    transform: translateX(4px);
+  }
+}
