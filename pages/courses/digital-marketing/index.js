@@ -9,16 +9,28 @@ import Testimonials from '@/blocks/Testimonials/Testimonials'
 import CTASection from '@/blocks/CTASection/CTASection'
 
 export default function CoursesDetailPage() {
+
+    const courseData = {
+        title: 'Software Development & Management',
+        price: '$200',
+        duration: '3–6 Month Course',
+        shortDescription: 'Build real-world software and learn how professional teams code, test, and deploy.',
+        fullDescription: 'Build real-world software and learn how professional teams code, test, and deploy. From foundations to full- stack, DevOps, and testing — graduate with a portfolio that proves you can build and ship production - ready software.',
+        buttonOne: "Enroll Now",
+        buttonTwo: "Download Brochure"
+    }
+
+
     return (
         <div>
-            <CourseHero />
+            <CourseHero courseData={courseData} />
             <CourseAbout />
             <LearningWorks />
-            <OutcomesCertificates/>
-            <KeralaAvailability/>
-            <LatestCoursesTwo/>
-            <Testimonials/>
-            <CTASection/>
+            <OutcomesCertificates />
+            <KeralaAvailability />
+            <LatestCoursesTwo />
+            <Testimonials />
+            <CTASection />
         </div>
     )
 }

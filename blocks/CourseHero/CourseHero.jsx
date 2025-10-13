@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import styles from './CourseHero.module.scss';
 
-const CourseHero = () => {
+const CourseHero = ({ courseData }) => {
     return (
         <section className={styles.courseHeroSection}>
             <div className={styles.container}>
@@ -12,20 +12,18 @@ const CourseHero = () => {
                     <span className={styles.separator}>/</span>
                     <Link href="/courses">Courses</Link>
                     <span className={styles.separator}>/</span>
-                    <span>Digital marketing</span>
+                    <span>{courseData?.title}</span>
                 </nav>
 
                 <div className={styles.heroContent}>
                     {/* Left Content */}
                     <div className={styles.leftContent}>
-                        <h1 className={styles.title}>Digital Marketing</h1>
+                        <h1 className={styles.title}>{courseData?.title}</h1>
                         <p className={styles.description}>
-                            Boost your online presence with hands-on training in SEO, Google Ads,
-                            Social Media Marketing, and Analytics. Learn through real projects and
-                            mentor guidance to attract, convert, and grow your audience effectively.
+                            {courseData?.fullDescription}
                         </p>
                         <button className={styles.connectButton}>
-                            Connect us
+                            {courseData?.buttonOne}
                         </button>
                     </div>
 
@@ -41,7 +39,7 @@ const CourseHero = () => {
 
                         <div className={styles.infoCard}>
                             <div className={styles.priceSection}>
-                                <h2 className={styles.price}>$200</h2>
+                                <h2 className={styles.price}>{courseData?.price}</h2>
                                 <h3 className={styles.cardTitle}>Course Information</h3>
                             </div>
 
@@ -76,12 +74,12 @@ const CourseHero = () => {
                                         </svg>
                                         <span>Duration</span>
                                     </div>
-                                    <span className={styles.detailValue}>3 weeks</span>
+                                    <span className={styles.detailValue}>{courseData?.duration}</span>
                                 </div>
                             </div>
 
                             <button className={styles.startButton}>
-                                Start Learning
+                                {courseData?.buttonTwo}
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
