@@ -10,20 +10,23 @@ const LatestCourses = () => {
             title: 'Information Technology & Networking',
             description: 'Lay the strongest foundation in networking, cybersecurity, cloud (AWS), and Linux with hands-on labs and mentor support. Build skills that power today\'s connected world.',
             level: 'Level',
+            btnLink: "/courses/information-technology-&-networking"
         },
         {
             id: 2,
             image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg",
-            title: 'Digital Marketing',
+            title: 'Interior Designing & Architecture',
             description: 'Learn how to ship SEO, Google Ads, social campaigns, and content deliverables every week. Graduate with a portfolio that local brands and agencies already trust.',
             level: 'Level',
+            btnLink: "/courses/interior-designing-&-architecture"
         },
         {
             id: 3,
             image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg",
-            title: 'Fashion Designing',
+            title: 'Software Development & Management',
             description: 'Transform imagination into reality—master illustration, garment construction, Aari embroidery, CAD pattern making, and boutique management to shape your future in fashion.',
             level: 'Level',
+            btnLink: "/courses/software-development-&-management"
         },
         {
             id: 1,
@@ -31,20 +34,23 @@ const LatestCourses = () => {
             title: 'Information Technology & Networking',
             description: 'Lay the strongest foundation in networking, cybersecurity, cloud (AWS), and Linux with hands-on labs and mentor support. Build skills that power today\'s connected world.',
             level: 'Level',
+            btnLink: "/courses/information-technology-&-networking"
         },
         {
             id: 2,
             image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg",
-            title: 'Digital Marketing',
+            title: 'Interior Designing & Architecture',
             description: 'Learn how to ship SEO, Google Ads, social campaigns, and content deliverables every week. Graduate with a portfolio that local brands and agencies already trust.',
             level: 'Level',
+            btnLink: "/courses/interior-designing-&-architecture"
         },
         {
             id: 3,
             image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg",
-            title: 'Fashion Designing',
+            title: 'Software Development & Management',
             description: 'Transform imagination into reality—master illustration, garment construction, Aari embroidery, CAD pattern making, and boutique management to shape your future in fashion.',
             level: 'Level',
+            btnLink: "/courses/software-development-&-management"
         },
     ];
 
@@ -83,7 +89,7 @@ const LatestCourses = () => {
                                         </svg>
                                         <span className={styles.levelText}>{course.level}</span>
                                     </div>
-                                    <Link href={'/contact'}>
+                                    <Link href={course?.btnLink}>
                                         <button className={styles.learnMoreButton}>
                                             Learn more
                                         </button>
