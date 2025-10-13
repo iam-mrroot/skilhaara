@@ -1,83 +1,151 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
 import styles from './NotFoundPage.module.scss';
 
 export default function NotFoundPage() {
-    const router = useRouter();
+    const [timeLeft, setTimeLeft] = useState({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0
+    });
 
-    const benefits = [
-        "Customised teamwear to showcase your unique identity",
-        "Priority support for smooth bulk order processing",
-        "Updates on new collections, offers, and sportswear trends"
+    const launchDate = new Date('2024-12-31T00:00:00').getTime();
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            const now = new Date().getTime();
+            const difference = launchDate - now;
+
+            if (difference > 0) {
+                setTimeLeft({
+                    days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                    minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+                    seconds: Math.floor((difference % (1000 * 60)) / 1000)
+                });
+            }
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, [launchDate]);
+
+    const features = [
+        {
+            icon: "🚀",
+            title: "Innovative Platform",
+            description: "Cutting-edge technology for modern learning"
+        },
+        {
+            icon: "🎯",
+            title: "Career Focused",
+            description: "Skills that matter in today's job market"
+        },
+        {
+            icon: "👥",
+            title: "Expert Mentors",
+            description: "Learn from industry professionals"
+        },
+        {
+            icon: "📱",
+            title: "Mobile First",
+            description: "Learn anywhere, anytime"
+        }
     ];
 
     return (
-        <section className={styles.notFoundSection}>
+        <section className={styles.comingSoonSection}>
             <div className={styles.container}>
-                <div className={styles.content}>
-                    {/* Left Content */}
-                    <div className={styles.textContent}>
-                        <h1 className={styles.title}>
-                            Page not found
-                        </h1>
+                {/* Background Elements */}
+                <div className={styles.backgroundElements}>
+                    <div className={styles.circle1}></div>
+                    <div className={styles.circle2}></div>
+                    <div className={styles.circle3}></div>
+                </div>
 
+                <div className={styles.content}>
+                    {/* Main Content */}
+                    <div className={styles.mainContent}>
+                        <div className={styles.badge}>
+                            🚀 Coming Soon
+                        </div>
+                        
+                        <h1 className={styles.title}>
+                            Something Amazing
+                            <span className={styles.highlight}> Is Coming</span>
+                        </h1>
+                        
                         <p className={styles.description}>
-                            The page you’re looking for doesn’t exist or might have been moved.
+                            We're working hard to bring you an incredible learning experience. 
+                            Get ready to transform your career with Skillhaara's innovative platform.
                         </p>
 
-                        <div className={styles.appPromotion}>
-                            <p className={styles.promoText}>
-                                While you’re here, check out what <Link href="https://www.skillhaara.com/" target="_blank" className={styles.appLink}>Skillhaara</Link> has to offer.
-                                Explore a platform built to help you upskill, grow, and connect with real-world opportunities.
-                            </p>
-
-                            <ul className={styles.benefitsList}>
-                                <li className={styles.benefitItem}>Learn from experienced mentors</li>
-                                <li className={styles.benefitItem}>Access practical, career-focused courses</li>
-                                <li className={styles.benefitItem}>Get recognised skill certifications</li>
-                                <li className={styles.benefitItem}>Build your professional profile</li>
-                            </ul>
+                        {/* Countdown Timer */}
+                        <div className={styles.countdown}>
+                            <div className={styles.countdownItem}>
+                                <span className={styles.countdownNumber}>{timeLeft.days}</span>
+                                <span className={styles.countdownLabel}>Days</span>
+                            </div>
+                            <div className={styles.countdownItem}>
+                                <span className={styles.countdownNumber}>{timeLeft.hours}</span>
+                                <span className={styles.countdownLabel}>Hours</span>
+                            </div>
+                            <div className={styles.countdownItem}>
+                                <span className={styles.countdownNumber}>{timeLeft.minutes}</span>
+                                <span className={styles.countdownLabel}>Minutes</span>
+                            </div>
+                            <div className={styles.countdownItem}>
+                                <span className={styles.countdownNumber}>{timeLeft.seconds}</span>
+                                <span className={styles.countdownLabel}>Seconds</span>
+                            </div>
                         </div>
 
+                        {/* Features Grid */}
+                        <div className={styles.featuresGrid}>
+                            {features.map((feature, index) => (
+                                <div key={index} className={styles.featureCard}>
+                                    {/* <div className={styles.featureIcon}>{feature.icon}</div> */}
+                                    <h3 className={styles.featureTitle}>{feature.title}</h3>
+                                    <p className={styles.featureDescription}>{feature.description}</p>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Action Buttons */}
                         <div className={styles.actionButtons}>
-                            <Link href="/" className={styles.homeButton}>
+                            <Link href="https://www.skillhaara.com/" target="_blank" className={styles.primaryButton}>
+                                Visit Current Website
+                            </Link>
+                            <Link href="/" className={styles.secondaryButton}>
                                 Go to Homepage
                             </Link>
                         </div>
+
+                        {/* Social Links */}
+                        <div className={styles.socialSection}>
+                            <p className={styles.socialText}>Follow us for updates</p>
+                            <div className={styles.socialLinks}>
+                                <a href="#" className={styles.socialLink}>Twitter</a>
+                                <a href="#" className={styles.socialLink}>LinkedIn</a>
+                                <a href="#" className={styles.socialLink}>Instagram</a>
+                                <a href="#" className={styles.socialLink}>Facebook</a>
+                            </div>
+                        </div>
                     </div>
 
-
-                    <div className={styles.imageContent}>
-                        <div className={styles.appShowcase}>
-                            <div className={styles.phoneContainer}>
-                                <div className={styles.phone}>
-                                    <img className={styles.phoneScreen} src="https://images.pexels.com/photos/8837787/pexels-photo-8837787.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" />
-                                </div>
-
-                                <div className={styles.phoneSecondary}>
-                                    <img className={styles.phoneScreen} src="https://images.pexels.com/photos/7691691/pexels-photo-7691691.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" />
-                                </div>
+                    {/* Illustration */}
+                    <div className={styles.illustration}>
+                        <div className={styles.illustrationContainer}>
+                            <div className={styles.floatingElement1}>📚</div>
+                            <div className={styles.floatingElement2}>💻</div>
+                            <div className={styles.floatingElement3}>🎓</div>
+                            <div className={styles.mainIllustration}>
+                                <div className={styles.rocket}>🚀</div>
                             </div>
-
-                            {/* <div className={styles.qrSection}>
-                                <div className={styles.qrCode}>
-                                    <Image
-                                        src="/qr-code.png" // Replace with your QR code
-                                        alt="Download App QR Code"
-                                        width={120}
-                                        height={120}
-                                        className={styles.qrImage}
-                                    />
-                                </div>
-                                <div className={styles.qrText}>
-                                    <p className={styles.scanText}>SCAN THE QR CODE</p>
-                                    <p className={styles.downloadText}>DOWNLOAD THE APP</p>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     );
-};
+}
