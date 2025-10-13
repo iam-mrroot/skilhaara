@@ -1,27 +1,16 @@
 // components/KeralaAvailability/KeralaAvailability.tsx
 import styles from './KeralaAvailability.module.scss';
 
-const KeralaAvailability = () => {
-    const locations = [
-        {
-            name: "Trivandrum",
-            description: "Mentor-led classes in SEO, content, ads, and analytics with flexible weekday and weekend batches."
-        },
-        {
-            name: "Kochi (Aluva, Ernakulam)",
-            description: "Hands-on sessions from keyword research to GA4 dashboards, plus interview readiness practice."
-        },
-        {
-            name: "Thrissur",
-            description: "Project-first learning with local business scenarios, portfolio reviews, and placement support."
-        }
-    ];
+const KeralaAvailability = ({ availabilityData }) => {
+    if (!availabilityData) return null;
+
+    const { title, locations } = availabilityData;
 
     return (
         <section className={styles.availabilitySection}>
             <div className={styles.container}>
                 <div className={styles.card}>
-                    <h2 className={styles.title}>Kerala availability</h2>
+                    <h2 className={styles.title}>{title}</h2>
 
                     <div className={styles.divider}></div>
 
