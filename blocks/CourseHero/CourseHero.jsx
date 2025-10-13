@@ -22,9 +22,11 @@ const CourseHero = ({ courseData }) => {
                         <p className={styles.description}>
                             {courseData?.fullDescription}
                         </p>
-                        <button className={styles.connectButton}>
-                            {courseData?.buttonOne}
-                        </button>
+                        <Link href={'/contact'}>
+                            <button className={styles.connectButton}>
+                                {courseData?.buttonOne}
+                            </button>
+                        </Link>
                     </div>
 
                     {/* Right Card */}
@@ -78,12 +80,15 @@ const CourseHero = ({ courseData }) => {
                                 </div>
                             </div>
 
-                            <button className={styles.startButton}>
-                                {courseData?.buttonTwo}
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </button>
+                            <Link href={'/brouchers'}>
+                                <button className={styles.startButton}>
+                                    {courseData?.buttonTwo}
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                </button>
+                            </Link>
+
                         </div>
                     </div>
                 </div>
