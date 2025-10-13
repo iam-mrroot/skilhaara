@@ -33,7 +33,7 @@ const FAQSection = () => {
     };
 
     return (
-        <section className={styles.faqSection}>
+        <section className={styles.faqSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.contentGrid}>
                     <div className={styles.faqColumn}>

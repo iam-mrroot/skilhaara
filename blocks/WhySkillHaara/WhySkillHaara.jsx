@@ -42,7 +42,7 @@ const WhySkillHaara = () => {
     ];
 
     return (
-        <section className={styles.whySkillHaaraSection}>
+        <section className={styles.whySkillHaaraSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.contentWrapper}>
                     <div className={styles.imageColumn}>

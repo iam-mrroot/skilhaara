@@ -7,7 +7,7 @@ const OutcomesCertificates = ({ outcomesData }) => {
     const { outcomes, certificates } = outcomesData;
 
     return (
-        <section className={styles.outcomesSection}>
+        <section className={styles.outcomesSection} data-aos="zoom-in">
             <div className={styles.container}>
                 {/* Outcomes Section */}
                 <div className={styles.outcomesBlock}>

@@ -76,7 +76,7 @@ const Testimonials = () => {
     };
 
     return (
-        <section className={styles.testimonialsSection}>
+        <section className={styles.testimonialsSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.header}>
                     <span className={styles.badge}>Student Feedback</span>

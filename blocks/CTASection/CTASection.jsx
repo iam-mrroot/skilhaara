@@ -4,7 +4,7 @@ import styles from './CTASection.module.scss';
 
 const CTASection = () => {
   return (
-    <section className={styles.ctaSection}>
+    <section className={styles.ctaSection} data-aos="zoom-in">
       <div className={styles.container}>
         <div className={styles.content}>
           <h2 className={styles.title}>

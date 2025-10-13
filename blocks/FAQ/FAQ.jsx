@@ -38,7 +38,7 @@ const FAQ = () => {
     };
 
     return (
-        <section className={styles.faqSection}>
+        <section className={styles.faqSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.header}>
                     <h2 className={styles.title}>Frequently Asked Questions</h2>

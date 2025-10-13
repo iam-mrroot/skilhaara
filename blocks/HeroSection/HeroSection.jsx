@@ -4,7 +4,7 @@ import styles from './HeroSection.module.scss';
 
 const HeroSection = () => {
     return (
-        <section className={styles.heroSection}>
+        <section className={styles.heroSection} data-aos="zoom-in">
             <div className={styles.videoContainer}>
                 <video
                     className={styles.videoBackground}

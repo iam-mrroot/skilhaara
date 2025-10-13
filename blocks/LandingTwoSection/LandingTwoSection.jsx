@@ -5,7 +5,7 @@ import styles from './LandingTwoSection.module.scss';
 
 const LandingTwoSection = ({ landingTwoSectionData }) => {
     return (
-        <section className={styles.aboutSection}>
+        <section className={styles.aboutSection} data-aos="zoom-in">
             <div className={styles.overlay} />
             <div className={styles.backgroundImage}>
                 <img src={landingTwoSectionData?.backgroundImage} alt="Learning environment" />

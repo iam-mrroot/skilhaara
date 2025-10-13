@@ -55,7 +55,7 @@ const LatestCourses = () => {
     ];
 
     return (
-        <section className={styles.latestCoursesSection}>
+        <section className={styles.latestCoursesSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <h2 className={styles.title}>Latest Courses</h2>
 

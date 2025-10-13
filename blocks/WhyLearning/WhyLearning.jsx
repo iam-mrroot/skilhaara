@@ -39,7 +39,7 @@ const WhyLearning = () => {
 
 
     return (
-        <section className={styles.whyLearningSection}>
+        <section className={styles.whyLearningSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.header}>
                     <span className={styles.badge}>Trending Courses</span>

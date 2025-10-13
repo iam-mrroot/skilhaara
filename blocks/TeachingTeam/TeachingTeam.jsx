@@ -23,7 +23,7 @@ const TeachingTeam = () => {
     ];
 
     return (
-        <section className={styles.teachingTeamSection}>
+        <section className={styles.teachingTeamSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.header}>
                     <span className={styles.badge}>Our Team</span>

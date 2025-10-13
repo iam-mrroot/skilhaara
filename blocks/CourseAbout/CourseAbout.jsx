@@ -3,7 +3,7 @@ import styles from './CourseAbout.module.scss';
 
 const CourseAbout = ({ aboutData }) => {
     return (
-        <section className={styles.courseAboutSection}>
+        <section className={styles.courseAboutSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <h2 className={styles.mainTitle}>{aboutData.title}</h2>
 

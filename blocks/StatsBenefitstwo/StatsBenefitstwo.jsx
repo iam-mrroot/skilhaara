@@ -91,7 +91,7 @@ const StatsBenefitstwo = () => {
   ];
 
   return (
-    <section className={styles.statsSection}>
+    <section className={styles.statsSection} data-aos="zoom-in">
       <div className={styles.container}>
         {/* Stats Section */}
         <div className={styles.statsCard}>

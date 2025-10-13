@@ -7,7 +7,7 @@ const KeralaAvailability = ({ availabilityData }) => {
     const { title, locations } = availabilityData;
 
     return (
-        <section className={styles.availabilitySection}>
+        <section className={styles.availabilitySection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.card}>
                     <h2 className={styles.title}>{title}</h2>

@@ -5,8 +5,22 @@ import Head from "next/head";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import FloatingButtons from '@/blocks/FloatingButtons/FloatingButtons'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function App({ Component, pageProps }) {
+
+  useEffect(() => {
+    import("aos/dist/aos.css");
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+  }, []);
+
   return <>
 
     <Head>
@@ -19,7 +33,7 @@ export default function App({ Component, pageProps }) {
     <Header />
     <Component {...pageProps} />
     <Footer />
-     <FloatingButtons />
+    <FloatingButtons />
   </>
     ;
 }

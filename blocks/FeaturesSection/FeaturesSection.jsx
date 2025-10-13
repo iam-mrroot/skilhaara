@@ -9,7 +9,7 @@ const FeaturesSection = () => {
             <div className={styles.container}>
                 <div className={styles.mainGrid}>
                     {/* Left Column - Two Cards */}
-                    <div className={styles.cardsColumn}>
+                    <div className={styles.cardsColumn} data-aos="zoom-in">
                         {/* Rating Card */}
                         <div className={`${styles.card} ${styles.ratingCard}`}>
                             <div className={styles.avatarGroup}>
@@ -68,7 +68,7 @@ const FeaturesSection = () => {
                     </div>
 
                     {/* Right Column - Video */}
-                    <div className={styles.videoColumn}>
+                    <div className={styles.videoColumn} data-aos="zoom-in">
                         <div className={styles.videoCard}>
                             <img
                                 src="/assets/images/FeaturesSection.jpg"

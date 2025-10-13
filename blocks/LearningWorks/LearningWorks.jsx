@@ -8,7 +8,7 @@ const LearningWorks = ({ learningWorksData }) => {
     const { howLearningWorks, whoThisFits, image } = learningWorksData;
 
     return (
-        <section className={styles.learningWorksSection}>
+        <section className={styles.learningWorksSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.content}>
                     {/* Left Column - Text Cards */}

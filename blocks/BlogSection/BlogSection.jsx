@@ -42,7 +42,7 @@ const BlogSection = () => {
     ];
 
     return (
-        <section className={styles.blogSection}>
+        <section className={styles.blogSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.header}>
                     <span className={styles.badge}>BLOG</span>

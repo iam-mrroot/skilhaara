@@ -93,7 +93,7 @@ const BlogSectionTwo = () => {
         : blogPosts.filter(post => post.categoryTag === activeCategory);
 
     return (
-        <section className={styles.blogSection}>
+        <section className={styles.blogSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.badgeDiv}> <span className={styles.badge}>Blog</span></div>
                 <div className={styles.header}>

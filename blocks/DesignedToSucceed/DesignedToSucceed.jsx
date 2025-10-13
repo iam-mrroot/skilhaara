@@ -36,7 +36,7 @@ const DesignedToSucceed = () => {
     ];
 
     return (
-        <section className={styles.designedSection}>
+        <section className={styles.designedSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.header}>
                     <span className={styles.badge}>Why Learn with us</span>

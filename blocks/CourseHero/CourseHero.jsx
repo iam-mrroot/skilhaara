@@ -4,7 +4,7 @@ import styles from './CourseHero.module.scss';
 
 const CourseHero = ({ courseData }) => {
     return (
-        <section className={styles.courseHeroSection}>
+        <section className={styles.courseHeroSection} data-aos="zoom-in">
             <div className={styles.container}>
                 {/* Breadcrumb */}
                 <nav className={styles.breadcrumb}>

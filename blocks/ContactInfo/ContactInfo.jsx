@@ -41,7 +41,7 @@ const ContactInfo = () => {
 
 
     return (
-        <section className={styles.contactInfoSection}>
+        <section className={styles.contactInfoSection} data-aos="zoom-in">
             <div className={styles.container}>
                 {contactDetails.map((detail) => (
                     <Link

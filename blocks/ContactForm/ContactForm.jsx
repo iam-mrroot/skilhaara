@@ -28,11 +28,11 @@ const ContactForm = () => {
     };
 
     return (
-        <section className={styles.contactSection}>
+        <section className={styles.contactSection} data-aos="zoom-in">
 
             <div className={styles.container}>
                 <h2 className={styles.title}>
-                    Have Any Questions! Send a <br /> Message
+                    Have Any Questions! Send a Message
                 </h2>
                 <div className={styles.decorativeDots}></div>
 

@@ -65,7 +65,7 @@ const Gallery = () => {
     ];
 
     return (
-        <section className={styles.gallerySection}>
+        <section className={styles.gallerySection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.tabsContainer}>
                     {tabs.map((tab) => (

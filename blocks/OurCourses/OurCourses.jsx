@@ -5,7 +5,7 @@ import styles from './OurCourses.module.scss';
 
 const OurCourses = () => {
     return (
-        <section className={styles.heroSection}>
+        <section className={styles.heroSection} data-aos="zoom-in">
             <div className={styles.container}>
                 <div className={styles.contentWrapper}>
                     <div className={styles.textContent}>

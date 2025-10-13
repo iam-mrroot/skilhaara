@@ -45,12 +45,12 @@ const StatsBenefits = () => {
 
 
   return (
-    <section className={styles.statsSection}>
+    <section className={styles.statsSection} data-aos="zoom-in">
       <div className={styles.container}>
         {/* Stats Section */}
         <div className={styles.statsCard}>
           {stats.map((stat, index) => (
-            <div key={index} className={styles.statItem}>
+            <div key={index} className={styles.statItem} data-aos="zoom-in">
               <div className={styles.statValue}>{stat.value}</div>
               <div className={styles.statLabel}>{stat.label}</div>
               {index < stats.length - 1 && <div className={styles.divider}></div>}
@@ -59,7 +59,7 @@ const StatsBenefits = () => {
         </div>
 
         {/* Benefits Section */}
-        <div className={styles.benefitsHeader}>
+        <div className={styles.benefitsHeader} >
           <span className={styles.badge}>Benefits</span>
           <Link href="/about" className={styles.moreButton}>
             More About Us
