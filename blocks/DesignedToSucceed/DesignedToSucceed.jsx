@@ -6,34 +6,35 @@ const DesignedToSucceed = () => {
         {
             id: 1,
             icon: (
-                <span className="material-symbols-outlined" style={{ fontSize: '40px', color: '#5b7cff' }}>
-                    schedule
-                </span>
+                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-100 text-blue-600">
+                    <span className="material-symbols-outlined text-3xl">schedule</span>
+                </div>
             ),
-            title: 'Flexible Learning',
-            description: 'Learn when it works for you anytime, anywhere, at your own pace.',
+            title: 'Industry-Driven Training',
+            description: 'Ensuring every skill you learn adds real value to your career.',
         },
         {
             id: 2,
             icon: (
-                <span className="material-symbols-outlined" style={{ fontSize: '40px', color: '#5b7cff' }}>
-                    school
-                </span>
+                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-100 text-blue-600">
+                    <span className="material-symbols-outlined text-3xl">school</span>
+                </div>
             ),
-            title: 'Expert Instructors',
-            description: 'Gain insights and mentorship from experienced professionals who guide your learning journey.',
+            title: 'Expert Mentorship',
+            description: 'Learn directly from experienced professionals.',
         },
         {
             id: 3,
             icon: (
-                <span className="material-symbols-outlined" style={{ fontSize: '40px', color: '#5b7cff' }}>
-                    workspace_premium
-                </span>
+                <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-100 text-blue-600">
+                    <span className="material-symbols-outlined text-3xl">workspace_premium</span>
+                </div>
             ),
-            title: 'Recognized Certificates',
-            description: 'Earn industry-recognized certificates to boost your career profile.',
+            title: 'Career-Focused Outcomes',
+            description: 'We don’t just teach, we prepare you for success.',
         },
     ];
+
 
     return (
         <section className={styles.designedSection} data-aos="zoom-in">
