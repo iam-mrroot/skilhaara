@@ -5,39 +5,19 @@ const WhySkillHaara = () => {
     const features = [
         {
             id: 1,
-            icon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" stroke="#6b7280" strokeWidth="2" />
-                </svg>
-            ),
-            title: 'Short heading goes here',
+            title: 'Learn from Industry Experts',
         },
         {
             id: 2,
-            icon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" stroke="#6b7280" strokeWidth="2" />
-                </svg>
-            ),
-            title: 'Short heading goes here',
+            title: 'Real-World Skill Development',
         },
         {
             id: 3,
-            icon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" stroke="#6b7280" strokeWidth="2" />
-                </svg>
-            ),
-            title: 'Short heading goes here',
+            title: 'Flexible & Accessible Learning',
         },
         {
             id: 4,
-            icon: (
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="10" stroke="#6b7280" strokeWidth="2" />
-                </svg>
-            ),
-            title: 'Short heading goes here',
+            title: 'Career-Focused Growth',
         },
     ];
 
@@ -57,24 +37,88 @@ const WhySkillHaara = () => {
                         <span className={styles.badge}>Why SkillHaara</span>
 
                         <h2 className={styles.title}>
-                            We exist for curious minds, bold thinkers and passionate learners.
-                            For those who are eager to learn. Those who aren't afraid to dive
-                            r and learn more.
+                            Because we believe learning should prepare you for life, not just exams.
                         </h2>
 
-                        <div className={styles.featureSection}>
-                            <span className={styles.featureBadge}>Career-Boosting Learning</span>
+                        <p className={styles.featureDescription}>
+                            At Skill Haara, we believe learning should go beyond textbooks. We exist to empower curious minds, bold thinkers,
+                            and passionate learners with skills that truly matter in the real world.
+                        </p>
 
-                            <p className={styles.featureDescription}>
-                                Empower your future with flexible, practical, and expert-led
-                                learning designed for real success.
+                        <div className={styles.featureSection}>
+
+                            <p className={styles.description} >
+                                At Skill Haara, we go beyond theory to focus on real-world skills,
+                                hands-on practice, and expert mentorship. Our training programs are
+                                designed to help students grow with confidence, gain industry-relevant
+                                knowledge, and step into their careers fully prepared for success.
                             </p>
+
+
+                            <div className="py-6 ">
+                                <span className={styles.featureBadge}>
+                                    Here’s why students choose Skill Haara:
+                                </span>
+
+                                <ul className="space-y-6">
+                                    <li>
+                                        <div className="p-1 rounded-xl">
+                                            <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                                                Practical, Real-World Learning
+                                            </h3>
+                                            <p className="text-gray-600 text-sm">
+                                                Our courses focus on hands-on experience and industry-relevant knowledge,
+                                                so you’re ready to tackle real challenges.
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div className="p-1 rounded-xl">
+                                            <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                                                Expert Mentorship
+                                            </h3>
+                                            <p className="text-gray-600 text-sm">
+                                                Learn from professionals who guide, inspire, and help you grow with confidence.
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div className="p-1 rounded-xl">
+                                            <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                                                Flexible & Accessible
+                                            </h3>
+                                            <p className="text-gray-600 text-sm">
+                                                Study anytime, anywhere, at your own pace, learning that fits your schedule
+                                                and lifestyle.
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div className="p-1 rounded-xl">
+                                            <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                                                Career-Focused Outcomes
+                                            </h3>
+                                            <p className="text-gray-600 text-sm">
+                                                We prepare you for success with placement support, projects, and
+                                                skill-building that make you job-ready.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <span className={styles.featureBadge}>Career-Boosting Learning</span>
 
                             <div className={styles.featuresList}>
                                 {features.map((feature) => (
                                     <div key={feature.id} className={styles.featureItem}>
                                         <div className={styles.iconWrapper}>
-                                            {/* {feature.icon} */}
                                             <div className={styles.iconDiv}></div>
                                         </div>
                                         <h3 className={styles.featureTitle}>{feature.title}</h3>
@@ -82,6 +126,10 @@ const WhySkillHaara = () => {
                                 ))}
                             </div>
                         </div>
+
+                        <p className={`${styles.description} pt-6`}>
+                            Skill Haara isn’t just about learning, it’s about creating your future.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -90,3 +138,14 @@ const WhySkillHaara = () => {
 };
 
 export default WhySkillHaara;
+
+
+
+
+
+
+
+
+
+
+

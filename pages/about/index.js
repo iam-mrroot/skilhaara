@@ -12,9 +12,9 @@ export default function AboutPage() {
 
     const landingTwoSectionData = {
         tag: "About us",
-        title: "Who we are & why we help you move forward",
+        title: "Who We Are? The Bridge Between Talent and Success.",
         description:
-            "We focus on practical learning covering real-world topics through simple, easy-to-follow lessons, guided by industry experts to ensure you gain skills that truly matter.",
+            "Why We Help? Because your growth is our mission. Learn by doing — not just listening. Our expert-guided, real-world lessons make complex concepts simple and help you master skills that matter in today’s world.",
         buttonText: "Get Start Now",
         backgroundImage: "/assets/images/aboutpage.jpg",
     };
