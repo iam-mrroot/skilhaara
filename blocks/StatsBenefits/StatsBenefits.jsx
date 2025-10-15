@@ -1,4 +1,3 @@
-// components/StatsBenefits/StatsBenefits.tsx
 import Link from 'next/link';
 import styles from './StatsBenefits.module.scss';
 
