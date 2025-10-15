@@ -5,7 +5,7 @@ import styles from './StatsBenefits.module.scss';
 const StatsBenefits = () => {
   const stats = [
     { value: '30+', label: 'Instructor' },
-    { value: '100+', label: 'Students' },
+    { value: '500+', label: 'Students' },
     { value: '30+', label: 'Courses' },
     { value: '10Y', label: 'Experience' },
   ];
