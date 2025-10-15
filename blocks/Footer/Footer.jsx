@@ -140,7 +140,7 @@ const Footer = () => {
             <div className={styles.copyright}>
                 <div className={styles.container}>
                     <p className={styles.copyrightText}>
-                        © Copyright 2025, All Rights Reserved by SkillHaara - Powered by URBANZI SOLUTIONS
+                        © Copyright 2025, All Rights Reserved by SkillHaara - Powered by <Link href={'https://urbanzi.in/'} target='_blank'> URBANZI SOLUTIONS</Link>
                     </p>
                 </div>
             </div>

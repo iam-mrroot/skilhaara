@@ -61,42 +61,44 @@ const LatestCourses = () => {
 
                 <div className={styles.coursesGrid}>
                     {courses.map((course) => (
-                        <div key={course.id} className={styles.courseCard}>
-                            <div className={styles.imageWrapper}>
-                                <img
-                                    src={course.image}
-                                    alt={course.title}
-                                    className={styles.courseImage}
-                                />
-                            </div>
+                        <Link href={course?.btnLink} key={course.id} >
+                            <div className={styles.courseCard}>
+                                <div className={styles.imageWrapper}>
+                                    <img
+                                        src={course.image}
+                                        alt={course.title}
+                                        className={styles.courseImage}
+                                    />
+                                </div>
 
-                            <div className={styles.cardContent}>
-                                <h3 className={styles.courseTitle}>{course.title}</h3>
-                                <p className={styles.courseDescription}>{course.description}</p>
+                                <div className={styles.cardContent}>
+                                    <h3 className={styles.courseTitle}>{course.title}</h3>
+                                    <p className={styles.courseDescription}>{course.description}</p>
 
-                                <div className={styles.cardFooter}>
-                                    <div className={styles.levelInfo}>
-                                        <svg
-                                            width="20"
-                                            height="20"
-                                            viewBox="0 0 20 20"
-                                            fill="none"
-                                            className={styles.levelIcon}
-                                        >
-                                            <rect x="2" y="12" width="3" height="6" fill="#4b5563" />
-                                            <rect x="8.5" y="8" width="3" height="10" fill="#4b5563" />
-                                            <rect x="15" y="4" width="3" height="14" fill="#4b5563" />
-                                        </svg>
-                                        <span className={styles.levelText}>{course.level}</span>
+                                    <div className={styles.cardFooter}>
+                                        <div className={styles.levelInfo}>
+                                            <svg
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 20 20"
+                                                fill="none"
+                                                className={styles.levelIcon}
+                                            >
+                                                <rect x="2" y="12" width="3" height="6" fill="#4b5563" />
+                                                <rect x="8.5" y="8" width="3" height="10" fill="#4b5563" />
+                                                <rect x="15" y="4" width="3" height="14" fill="#4b5563" />
+                                            </svg>
+                                            <span className={styles.levelText}>{course.level}</span>
+                                        </div>
+                                        <Link href={course?.btnLink}>
+                                            <button className={styles.learnMoreButton}>
+                                                Learn more
+                                            </button>
+                                        </Link>
                                     </div>
-                                    <Link href={course?.btnLink}>
-                                        <button className={styles.learnMoreButton}>
-                                            Learn more
-                                        </button>
-                                    </Link>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>
