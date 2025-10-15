@@ -6,7 +6,8 @@ const ContactForm = () => {
         name: '',
         phone: '',
         email: '',
-        location: '',
+        state: 'Kerala',
+        city: '',
         center: '',
         course: '',
         message: '',
@@ -14,6 +15,29 @@ const ContactForm = () => {
 
     const [errors, setErrors] = useState({});
     const [showToast, setShowToast] = useState(false);
+
+    const districts = [
+        'Thiruvananthapuram',
+        'Kollam',
+        'Pathanamthitta',
+        'Alappuzha',
+        'Kottayam',
+        'Idukki',
+        'Ernakulam',
+        'Thrissur',
+        'Palakkad',
+        'Malappuram',
+        'Kozhikode',
+        'Wayanad',
+        'Kannur',
+        'Kasaragod',
+    ];
+
+    const centers = [
+        'Trivandrum',
+        'Thrissur',
+        'Aluva (Kochi)',
+    ];
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -28,8 +52,8 @@ const ContactForm = () => {
         if (!formData.name.trim()) newErrors.name = 'Name is required';
         if (!/^[6-9]\d{9}$/.test(formData.phone)) newErrors.phone = 'Enter a valid 10-digit phone number';
         if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = 'Enter a valid email address';
-        if (!formData.location.trim()) newErrors.location = 'Location is required';
-        if (!formData.center.trim()) newErrors.center = 'Center is required';
+        if (!formData.city.trim()) newErrors.city = 'Please select a city';
+        if (!formData.center.trim()) newErrors.center = 'Please select a center';
         if (!formData.course.trim()) newErrors.course = 'Course is required';
         return newErrors;
     };
@@ -51,7 +75,8 @@ const ContactForm = () => {
             name: '',
             phone: '',
             email: '',
-            location: '',
+            state: 'Kerala',
+            city: '',
             center: '',
             course: '',
             message: '',
@@ -109,45 +134,70 @@ const ContactForm = () => {
                                 </div>
 
                                 <div className={styles.formGroup}>
-                                    <label htmlFor="location" className={styles.label}>Location</label>
-                                    <input
-                                        type="text"
-                                        id="location"
-                                        name="location"
-                                        value={formData.location}
+                                    <label htmlFor="state" className={styles.label}>State</label>
+                                    <select
+                                        id="state"
+                                        name="state"
+                                        value={formData.state}
                                         onChange={handleChange}
                                         className={styles.input}
-                                    />
-                                    {errors.location && <p className={styles.error}>{errors.location}</p>}
+                                    >
+                                        <option value="Kerala">Kerala</option>
+                                    </select>
                                 </div>
                             </div>
 
                             <div className={styles.inlineGroup}>
                                 <div className={styles.formGroup}>
+                                    <label htmlFor="city" className={styles.label}>City</label>
+                                    <select
+                                        id="city"
+                                        name="city"
+                                        value={formData.city}
+                                        onChange={handleChange}
+                                        className={styles.input}
+                                    >
+                                        <option value="">Select City</option>
+                                        {districts.map((district) => (
+                                            <option key={district} value={district}>
+                                                {district}
+                                            </option>
+                                        ))}
+                                    </select>
+                                    {errors.city && <p className={styles.error}>{errors.city}</p>}
+                                </div>
+
+                                <div className={styles.formGroup}>
                                     <label htmlFor="center" className={styles.label}>Center</label>
-                                    <input
-                                        type="text"
+                                    <select
                                         id="center"
                                         name="center"
                                         value={formData.center}
                                         onChange={handleChange}
                                         className={styles.input}
-                                    />
+                                    >
+                                        <option value="">Select Center</option>
+                                        {centers.map((center) => (
+                                            <option key={center} value={center}>
+                                                {center}
+                                            </option>
+                                        ))}
+                                    </select>
                                     {errors.center && <p className={styles.error}>{errors.center}</p>}
                                 </div>
+                            </div>
 
-                                <div className={styles.formGroup}>
-                                    <label htmlFor="course" className={styles.label}>Course</label>
-                                    <input
-                                        type="text"
-                                        id="course"
-                                        name="course"
-                                        value={formData.course}
-                                        onChange={handleChange}
-                                        className={styles.input}
-                                    />
-                                    {errors.course && <p className={styles.error}>{errors.course}</p>}
-                                </div>
+                            <div className={styles.formGroup}>
+                                <label htmlFor="course" className={styles.label}>Course</label>
+                                <input
+                                    type="text"
+                                    id="course"
+                                    name="course"
+                                    value={formData.course}
+                                    onChange={handleChange}
+                                    className={styles.input}
+                                />
+                                {errors.course && <p className={styles.error}>{errors.course}</p>}
                             </div>
 
                             <div className={styles.formGroup}>
@@ -189,7 +239,6 @@ const ContactForm = () => {
                                 Lead form submitted successfully!
                             </div>
                         )}
-
                     </div>
 
                     <div className={styles.imageWrapper}>
@@ -200,8 +249,6 @@ const ContactForm = () => {
                         />
                     </div>
                 </div>
-
-
             </div>
         </section>
     );
