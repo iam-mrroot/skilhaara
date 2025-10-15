@@ -8,25 +8,36 @@ const FAQSection = () => {
     const faqs = [
         {
             id: 1,
-            question: 'Short heading goes here',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            question: 'What is Skill Haara?',
+            answer:
+                'Skill Haara is a training and placement platform that helps students gain practical skills and career-ready knowledge.',
         },
         {
             id: 2,
-            question: 'Short heading goes here',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            question: 'Who can learn with Skill Haara?',
+            answer:
+                'Anyone eager to learn, especially students, fresh graduates, and young professionals looking to boost their careers.',
         },
         {
             id: 3,
-            question: 'Short heading goes here',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            question: 'How are the courses delivered?',
+            answer:
+                'Through flexible, easy-to-follow lessons guided by industry experts, both online and offline.',
         },
         {
             id: 4,
-            question: 'Short heading goes here',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            question: 'Will I get placement support?',
+            answer:
+                'Yes! We provide guidance and support to help you step confidently into your career.',
+        },
+        {
+            id: 5,
+            question: 'Why choose Skill Haara?',
+            answer:
+                'We focus on practical learning, real-world skills, and expert mentorship to help you succeed.',
         },
     ];
+
 
     const toggleFAQ = (index) => {
         setOpenIndex(openIndex === index ? null : index);
