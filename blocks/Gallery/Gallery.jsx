@@ -55,7 +55,7 @@ const Gallery = () => {
     const openLightbox = (index) => {
         setCurrentImageIndex(index);
         setLightboxOpen(true);
-        document.body.style.overflow = 'hidden'; 
+        document.body.style.overflow = 'hidden';
     };
 
     const closeLightbox = () => {
