@@ -1,4 +1,3 @@
-// components/LatestCourses/LatestCourses.tsx
 import Link from 'next/link';
 import styles from './LatestCourses.module.scss';
 
