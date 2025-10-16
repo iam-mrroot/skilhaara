@@ -156,7 +156,7 @@ export default function DataScienceArtificialIntelligence() {
             <LearningWorks learningWorksData={learningWorksData} />
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
-            <LatestCoursesTwo />
+            <LatestCoursesTwo jobCodes={['it-networking', 'software-dev', 'digital-marketing']} />
             <Testimonials />
             <CTASection />
         </div>

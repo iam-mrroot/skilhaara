@@ -148,7 +148,7 @@ export default function DigitalMarketingPage() {
             <LearningWorks learningWorksData={learningWorksData} />
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
-            <LatestCoursesTwo />
+            <LatestCoursesTwo jobCodes={['software-dev', 'it-networking', 'graphic-design', 'interior-design', 'fashion-design']} />
             <Testimonials />
             <CTASection />
         </div>

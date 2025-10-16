@@ -130,7 +130,7 @@ export default function CoursesDetailPage() {
         ],
     };
 
-    
+
 
 
 
@@ -141,7 +141,7 @@ export default function CoursesDetailPage() {
             <LearningWorks learningWorksData={learningWorksData} />
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
-            <LatestCoursesTwo />
+            <LatestCoursesTwo jobCodes={['digital-marketing', 'ai-ml-data', 'it-networking']} />
             <Testimonials />
             <CTASection />
         </div>

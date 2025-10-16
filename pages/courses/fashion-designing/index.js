@@ -150,7 +150,7 @@ export default function FashionDesigningPage() {
             <LearningWorks learningWorksData={learningWorksData} />
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
-            <LatestCoursesTwo />
+            <LatestCoursesTwo jobCodes={['graphic-design','digital-marketing','interior-design']} />
             <Testimonials />
             <CTASection />
         </div>

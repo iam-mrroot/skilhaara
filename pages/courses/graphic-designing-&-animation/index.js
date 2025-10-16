@@ -153,7 +153,7 @@ export default function GraphicDesigningPage() {
             <LearningWorks learningWorksData={learningWorksData} />
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
-            <LatestCoursesTwo />
+            <LatestCoursesTwo jobCodes={['digital-marketing', 'it-networking', 'interior-design']} />
             <Testimonials />
             <CTASection />
         </div>
