@@ -1,4 +1,3 @@
-// components/CoursesSection/CoursesSection.tsx
 import Link from 'next/link';
 import styles from './CoursesSection.module.scss';
 
@@ -6,51 +5,66 @@ const CoursesSection = () => {
   const courses = [
     {
       id: 1,
-      title: 'Digital Marketing',
-      description: 'Facebook/ Instagram ad setup highly valuable for business & freelance',
-      coursesCount: 4,
+      title: 'Information Technology & Networking',
+      description:
+        'Build your IT foundation from the ground up  master networking, CCNA concepts, Linux, cloud, and cybersecurity with guided labs that simulate real-world troubleshooting. Ideal for students aiming for an IT or network engineering career.',
+      coursesCount: 6,
+      link: '/courses/information-technology-networking',
+      icon: 'router',
     },
     {
       id: 2,
       title: 'Digital Marketing',
-      description: 'Facebook/ Instagram ad setup highly valuable for business & freelance',
-      coursesCount: 4,
+      description:
+        'Learn how to promote any brand online with SEO, Google Ads, social media, and content marketing. Work on live campaigns that teach you how to attract, engage, and convert real customers  perfect for freelancers and marketing beginners.',
+      coursesCount: 5,
+      link: '/courses/digital-marketing',
+      icon: 'campaign',
     },
     {
       id: 3,
-      title: 'Digital Marketing',
-      description: 'Facebook/ Instagram ad setup highly valuable for business & freelance',
-      coursesCount: 4,
+      title: 'Fashion Designing',
+      description:
+        'Turn your creativity into a career. Learn illustration, garment construction, Aari embroidery, CAD pattern making, and boutique management  all through guided studio sessions that bring your designs to life.',
+      coursesCount: 5,
+      link: '/courses/fashion-designing',
+      icon: 'checkroom',
     },
     {
       id: 4,
-      title: 'Digital Marketing',
-      description: 'Facebook/ Instagram ad setup highly valuable for business & freelance',
-      coursesCount: 4,
+      title: 'Interior Designing & Architecture',
+      description:
+        'Discover how to plan, draft, and visualize spaces with AutoCAD, 3ds Max, Revit, and lighting techniques. You’ll work on live interior projects that build confidence to design real homes and commercial spaces.',
+      coursesCount: 5,
+      link: '/courses/interior-designing-architecture',
+      icon: 'architecture',
     },
     {
       id: 5,
-      title: 'Digital Marketing',
-      description: 'Facebook/ Instagram ad setup highly valuable for business & freelance',
-      coursesCount: 4,
+      title: 'Graphic Designing & Animation',
+      description:
+        'Master Photoshop, Illustrator, CorelDRAW, and motion tools like After Effects and Blender. Learn to design visuals, edit videos, and animate stories  everything you need to start a creative design or animation career.',
+      coursesCount: 6,
+      link: '/courses/graphic-designing-animation',
+      icon: 'palette',
     },
     {
       id: 6,
-      title: 'Digital Marketing',
-      description: 'Facebook/ Instagram ad setup highly valuable for business & freelance',
-      coursesCount: 4,
+      title: 'AI, ML, ChatGPT & Data Science',
+      description:
+        'Understand how data drives decisions. Learn Python, Power BI, machine learning models, and generative AI tools to analyze data and automate insights  skills valued across tech and business industries.',
+      coursesCount: 6,
+      link: '/courses/ai-ml-chatgpt-data-science',
+      icon: 'smart_toy',
     },
     {
       id: 7,
-      title: 'Digital Marketing',
-      description: 'Facebook/ Instagram ad setup highly valuable for business & freelance',
-      coursesCount: 4,
-    },
-    {
-      id: 8,
-      title: 'Digital Marketing',
-      description: 'Facebook/ Instagram ad setup highly valuable for business & freelance',
-      coursesCount: 4,
+      title: 'Software Development & Management',
+      description:
+        'Build full-stack applications from scratch  HTML, CSS, JavaScript, React, Python, databases, and DevOps. Gain project management and agile skills to deliver software that’s efficient, scalable, and ready for real clients.',
+      coursesCount: 7,
+      link: '/courses/software-development-management',
+      icon: 'code',
     },
   ];
 
@@ -64,55 +78,17 @@ const CoursesSection = () => {
           </div>
           <Link href="/courses" className={styles.viewMoreButton}>
             View More
-            <span class="material-symbols-outlined">
-              arrow_circle_right
-            </span>
+            <span className="material-symbols-outlined">arrow_circle_right</span>
           </Link>
         </div>
 
         <div className={styles.coursesGrid}>
           {courses.map((course) => (
-            <Link href={'/courses'} key={course.id} >
+            <Link href={course.link} key={course.id}>
               <div className={styles.courseCard}>
                 <div className={styles.cardHeader}>
                   <div className={styles.iconWrapper}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path
-                        d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M8.59 13.51L15.42 17.49"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M15.41 6.51L8.59 10.49"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <span className="material-symbols-outlined">{course.icon}</span>
                   </div>
                   <span className={styles.coursesCount}>{course.coursesCount} courses</span>
                 </div>
