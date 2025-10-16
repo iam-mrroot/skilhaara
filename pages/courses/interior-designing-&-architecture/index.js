@@ -122,6 +122,31 @@ export default function CoursesDetailPage() {
         ],
     };
 
+    const testimonials = [
+        {
+            id: 1,
+            name: "Designer’s Assistant, Trivandrum",
+            course: "Interior Designing & Architecture",
+            rating: 5,
+            feedback: "“My first client approved the kitchen design on the first try—the drawings were clear and detailed.”",
+        },
+        {
+            id: 2,
+            name: "3D Visualizer, Kochi",
+            course: "Interior Designing & Architecture",
+            rating: 5,
+            feedback: "“Lighting practice made all the difference—my renders now match reality.”",
+        },
+        {
+            id: 3,
+            name: "Freelance Consultant, Thrissur",
+            course: "Interior Designing & Architecture",
+            rating: 5,
+            feedback: "“Learning BOQs and vendor calls helped me manage execution, not just design.”",
+        },
+    ];
+
+
     return (
         <div>
             <CourseHero courseData={courseData} />
@@ -129,8 +154,8 @@ export default function CoursesDetailPage() {
             <LearningWorks learningWorksData={learningWorksData} />
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
-            <LatestCoursesTwo  jobCodes={['graphic-design','digital-marketing','it-networking']}/>
-            <Testimonials />
+            <LatestCoursesTwo jobCodes={['graphic-design', 'digital-marketing', 'it-networking']} />
+            <Testimonials testimonials={testimonials} />
             <CTASection />
         </div>
     )

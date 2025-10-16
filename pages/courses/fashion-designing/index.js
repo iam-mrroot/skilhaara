@@ -142,6 +142,31 @@ export default function FashionDesigningPage() {
         ],
     }
 
+    const testimonials = [
+        {
+            id: 1,
+            name: "Designer’s Assistant, Trivandrum",
+            course: "Fashion Designing",
+            rating: 5,
+            feedback: "“Seeing my sketch turn into a fitted dress gave me confidence I never imagined.”",
+        },
+        {
+            id: 2,
+            name: "Embroidery Specialist, Kochi",
+            course: "Fashion Designing",
+            rating: 5,
+            feedback: "“Aari went from intimidating to meditative—the rhythm of the frame is now my stress-buster.”",
+        },
+        {
+            id: 3,
+            name: "Boutique Owner, Thrissur",
+            course: "Fashion Designing",
+            rating: 5,
+            feedback: "“The boutique module gave me courage to launch my custom blouse line before Onam.”",
+        },
+    ];
+
+
 
     return (
         <div>
@@ -150,8 +175,8 @@ export default function FashionDesigningPage() {
             <LearningWorks learningWorksData={learningWorksData} />
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
-            <LatestCoursesTwo jobCodes={['graphic-design','digital-marketing','interior-design']} />
-            <Testimonials />
+            <LatestCoursesTwo jobCodes={['graphic-design', 'digital-marketing', 'interior-design']} />
+            <Testimonials testimonials={testimonials}/>
             <CTASection />
         </div>
     );

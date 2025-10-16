@@ -3,14 +3,14 @@ import { useRef } from 'react';
 import Slider from 'react-slick';
 import styles from './Testimonials.module.scss';
 
-const Testimonials = () => {
+const Testimonials = ({ testimonials = [] }) => {
     const sliderRef = useRef(null);
 
-    const testimonials = [
+    const defaultTestimonials = [
         {
             id: 1,
             name: 'Aparna',
-            course: 'UIUX , Batch 03',
+            course: 'UIUX, Batch 03',
             image: '/images/student1.jpg',
             rating: 5,
             feedback:
@@ -18,41 +18,25 @@ const Testimonials = () => {
         },
         {
             id: 2,
-            name: 'Aparna',
-            course: 'UIUX , Batch 03',
-            image: '/images/student2.jpg',
-            rating: 5,
-            feedback:
-                '"The environment was very supportive and interactive. Loved how each session was structured."',
-        },
-        {
-            id: 3,
             name: 'Rajesh',
-            course: 'Web Development , Batch 05',
+            course: 'Web Development, Batch 05',
             image: '/images/student3.jpg',
             rating: 5,
             feedback:
                 '"The course structure is excellent and the instructors are very supportive. I learned so much in a short period of time."',
         },
         {
-            id: 4,
+            id: 3,
             name: 'Priya',
-            course: 'Digital Marketing , Batch 02',
+            course: 'Digital Marketing, Batch 02',
             image: '/images/student4.jpg',
             rating: 5,
             feedback:
                 '"Amazing platform for learning new skills. The content is up-to-date and relevant to industry needs."',
         },
-        {
-            id: 5,
-            name: 'Vishnu',
-            course: 'Data Science , Batch 01',
-            image: '/images/student5.jpg',
-            rating: 5,
-            feedback:
-                '"Instructors really know their stuff and care about your growth. Highly recommend Zentora!"',
-        },
     ];
+
+    const testimonialList = testimonials.length ? testimonials : defaultTestimonials;
 
     const settings = {
         dots: false,
@@ -85,21 +69,20 @@ const Testimonials = () => {
 
                 <div className={styles.carouselWrapper}>
                     <Slider ref={sliderRef} {...settings}>
-                        {testimonials.map((t) => (
+                        {testimonialList.map((t) => (
                             <div key={t.id} className={styles.testimonialCard}>
                                 <div className={styles.cardHeader}>
                                     <div className={styles.avatar}>
                                         <img
-                                            src="https://images.pexels.com/photos/1181599/pexels-photo-1181599.jpeg"
+                                            src={'https://images.pexels.com/photos/1181599/pexels-photo-1181599.jpeg'}
                                             alt={t.name}
                                         />
                                     </div>
-
                                 </div>
 
                                 <div className={styles.cardBody}>
                                     <div className={styles.rating}>
-                                        {[...Array(t.rating)].map((_, i) => (
+                                        {[...Array(t.rating || 5)].map((_, i) => (
                                             <svg
                                                 key={i}
                                                 width="24"
@@ -129,36 +112,14 @@ const Testimonials = () => {
                         className={styles.navButton}
                         aria-label="Previous testimonial"
                     >
-                        {/* <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M15 18L9 12L15 6"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg> */}
-                        <span class="material-symbols-outlined">
-                            arrow_back
-                        </span>
+                        <span className="material-symbols-outlined">arrow_back</span>
                     </button>
                     <button
                         onClick={handleNext}
                         className={styles.navButton}
                         aria-label="Next testimonial"
                     >
-                        {/* <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M9 18L15 12L9 6"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg> */}
-                        <span class="material-symbols-outlined">
-                            arrow_forward
-                        </span>
+                        <span className="material-symbols-outlined">arrow_forward</span>
                     </button>
                 </div>
             </div>

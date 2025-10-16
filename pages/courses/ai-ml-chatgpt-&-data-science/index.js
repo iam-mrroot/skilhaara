@@ -148,6 +148,30 @@ export default function DataScienceArtificialIntelligence() {
         ],
     };
 
+    const testimonials = [
+        {
+            id: 1,
+            name: 'Data Analyst, Trivandrum',
+            course: 'AI & Data Science',
+            rating: 5,
+            feedback: '“Seeing my first model outperform a baseline flipped a switch—I knew what to try next.”',
+        },
+        {
+            id: 2,
+            name: 'Business Analyst, Kochi',
+            course: 'Power BI & Analytics',
+            rating: 5,
+            feedback: '“Dashboards finally told a story; the review template was gold.”',
+        },
+        {
+            id: 3,
+            name: 'AI Trainee, Thrissur',
+            course: 'ChatGPT & ML',
+            rating: 5,
+            feedback: '“Combining embeddings with our FAQs reduced support time fast.”',
+        },
+    ]
+
 
     return (
         <div>
@@ -157,7 +181,7 @@ export default function DataScienceArtificialIntelligence() {
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
             <LatestCoursesTwo jobCodes={['it-networking', 'software-dev', 'digital-marketing']} />
-            <Testimonials />
+            <Testimonials testimonials={testimonials} />
             <CTASection />
         </div>
     );

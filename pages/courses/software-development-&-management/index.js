@@ -131,6 +131,30 @@ export default function CoursesDetailPage() {
     };
 
 
+    const testimonials = [
+        {
+            id: 1,
+            name: "Software Developer, Trivandrum",
+            course: "Software Development & Management",
+            rating: 5,
+            feedback: "Pull requests stopped being scary—reviews became the fastest way to grow.”",
+        },
+        {
+            id: 2,
+            name: " QA Engineer, Kochi",
+            course: "Software Development & Management",
+            rating: 5,
+            feedback: "CI, tests, and a one-click deploy changed how I think about quality.”",
+        },
+        {
+            id: 3,
+            name: "Full-Stack Trainee, Thrissur",
+            course: "Software Development & Management",
+            rating: 5,
+            feedback: "The capstone’s README and demo got me two interviews in a week.",
+        },
+    ];
+
 
 
 
@@ -142,7 +166,7 @@ export default function CoursesDetailPage() {
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
             <LatestCoursesTwo jobCodes={['digital-marketing', 'ai-ml-data', 'it-networking']} />
-            <Testimonials />
+            <Testimonials testimonials={testimonials} />
             <CTASection />
         </div>
     )

@@ -146,6 +146,31 @@ export default function GraphicDesigningPage() {
         ],
     }
 
+    const testimonials = [
+        {
+            id: 1,
+            name: "Graphic Designer, Trivandrum",
+            course: "Graphic Designing & Animation",
+            rating: 5,
+            feedback: "“My portfolio finally showed range—brand, UI, and motion—and interviews started quickly.”",
+        },
+        {
+            id: 2,
+            name: "Motion Designer, Kochi",
+            course: "Graphic Designing & Animation",
+            rating: 5,
+            feedback: "“Animating type and shapes made our social posts feel premium.”",
+        },
+        {
+            id: 3,
+            name: "UI/UX Designer, Thrissur",
+            course: "Graphic Designing & Animation",
+            rating: 5,
+            feedback: "“The feedback loop was the game-changer—each revision got tighter and clearer.”",
+        },
+    ];
+
+
     return (
         <div>
             <CourseHero courseData={courseData} />
@@ -154,7 +179,7 @@ export default function GraphicDesigningPage() {
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
             <LatestCoursesTwo jobCodes={['digital-marketing', 'it-networking', 'interior-design']} />
-            <Testimonials />
+            <Testimonials testimonials={testimonials} />
             <CTASection />
         </div>
     );

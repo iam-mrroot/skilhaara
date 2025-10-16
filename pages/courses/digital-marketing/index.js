@@ -141,6 +141,32 @@ export default function DigitalMarketingPage() {
         ],
     };
 
+
+    const testimonials = [
+        {
+            id: 1,
+            name: 'SEO Analyst, Trivandrum',
+            course: 'Digital Marketing',
+            rating: 5,
+            feedback: '“I shipped my first SEO plan and saw clicks rise in weeks.”',
+        },
+        {
+            id: 2,
+            name: 'Ads Executive, Kochi',
+            course: 'Digital Marketing',
+            rating: 5,
+            feedback: '“Running my own Google Ads felt scary—until the weekly reviews.”',
+        },
+        {
+            id: 3,
+            name: 'Social Media Manager, Thrissur',
+            course: 'Digital Marketing',
+            rating: 5,
+            feedback: '“The content + social calendar made our brand consistent for the first time.”',
+        },
+    ];
+
+
     return (
         <div>
             <CourseHero courseData={courseData} />
@@ -149,7 +175,7 @@ export default function DigitalMarketingPage() {
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
             <LatestCoursesTwo jobCodes={['software-dev', 'it-networking', 'graphic-design', 'interior-design', 'fashion-design']} />
-            <Testimonials />
+            <Testimonials testimonials={testimonials} />
             <CTASection />
         </div>
     );

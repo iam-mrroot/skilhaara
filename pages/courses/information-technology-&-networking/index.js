@@ -128,6 +128,31 @@ export default function CoursesDetailPage() {
         ],
     };
 
+    const testimonials = [
+        {
+            id: 1,
+            name: "Network Engineer, Trivandrum",
+            course: "Information Technology & Networking",
+            rating: 5,
+            feedback: "“The labs felt like real work—I stopped memorizing and started understanding.”",
+        },
+        {
+            id: 2,
+            name: "SOC Analyst, Kochi",
+            course: "Information Technology & Networking",
+            rating: 5,
+            feedback: "“Mock interviews made the real one feel familiar; feedback was specific and honest.”",
+        },
+        {
+            id: 3,
+            name: "IT Support Specialist, Thrissur",
+            course: "Information Technology & Networking",
+            rating: 5,
+            feedback: "“Weekend batches meant I could upskill without pausing life.”",
+        },
+    ];
+
+
     return (
         <div>
             <CourseHero courseData={courseData} />
@@ -135,8 +160,8 @@ export default function CoursesDetailPage() {
             <LearningWorks learningWorksData={learningWorksData} />
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
-            <LatestCoursesTwo />
-            <Testimonials />
+            <LatestCoursesTwo jobCodes={['software-dev', 'digital-marketing', 'graphic-design', 'interior-design', 'fashion-design']} />
+            <Testimonials testimonials={testimonials}/>
             <CTASection />
         </div>
     )
