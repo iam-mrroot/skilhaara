@@ -10,7 +10,7 @@ const LatestCourses = () => {
             title: 'Information Technology & Networking',
             description:
                 'Build your IT foundation from the ground up. Master networking, CCNA concepts, Linux, cloud, and cybersecurity with guided labs that simulate real-world troubleshooting. Ideal for students aiming for an IT or network engineering career.',
-            level: 'Beginner to Advanced',
+            level: 'All Levels',
             btnLink: '/courses/information-technology-&-networking',
         },
         {
@@ -19,7 +19,7 @@ const LatestCourses = () => {
             image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
             title: 'Digital Marketing',
             description:
-                'Learn how to promote any brand online with SEO, Google Ads, social media, and content marketing. Work on live campaigns that teach you how to attract, engage, and convert real customers — perfect for freelancers and marketing beginners.',
+                'Learn how to promote any brand online with SEO, Google Ads, social media, and content marketing. Work on live campaigns that teach you how to attract, engage, and convert real customers  perfect for freelancers and marketing beginners.',
             level: 'All Levels',
             btnLink: '/courses/digital-marketing',
         },
@@ -29,8 +29,8 @@ const LatestCourses = () => {
             image: 'https://images.pexels.com/photos/6311575/pexels-photo-6311575.jpeg',
             title: 'Fashion Designing',
             description:
-                'Turn your creativity into a career. Learn illustration, garment construction, Aari embroidery, CAD pattern making, and boutique management — all through guided studio sessions that bring your designs to life.',
-            level: 'Beginner to Intermediate',
+                'Turn your creativity into a career. Learn illustration, garment construction, Aari embroidery, CAD pattern making, and boutique management  all through guided studio sessions that bring your designs to life.',
+            level: 'All Levels',
             btnLink: '/courses/fashion-designing',
         },
         {
@@ -40,7 +40,7 @@ const LatestCourses = () => {
             title: 'Interior Designing & Architecture',
             description:
                 'Discover how to plan, draft, and visualize spaces with AutoCAD, 3ds Max, Revit, and lighting techniques. You’ll work on live interior projects that build confidence to design real homes and commercial spaces.',
-            level: 'Intermediate',
+            level: 'All Levels',
             btnLink: '/courses/interior-designing-&-architecture',
         },
         {
@@ -49,8 +49,8 @@ const LatestCourses = () => {
             image: 'https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg',
             title: 'Graphic Designing & Animation',
             description:
-                'Master Photoshop, Illustrator, CorelDRAW, and motion tools like After Effects and Blender. Learn to design visuals, edit videos, and animate stories — everything you need to start a creative design or animation career.',
-            level: 'Beginner',
+                'Master Photoshop, Illustrator, CorelDRAW, and motion tools like After Effects and Blender. Learn to design visuals, edit videos, and animate stories  everything you need to start a creative design or animation career.',
+            level: 'All Levels',
             btnLink: '/courses/graphic-designing-&-animation',
         },
         {
@@ -59,8 +59,8 @@ const LatestCourses = () => {
             image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg',
             title: 'AI, ML, ChatGPT & Data Science',
             description:
-                'Understand how data drives decisions. Learn Python, Power BI, machine learning models, and generative AI tools to analyze data and automate insights — skills valued across tech and business industries.',
-            level: 'Advanced',
+                'Understand how data drives decisions. Learn Python, Power BI, machine learning models, and generative AI tools to analyze data and automate insights  skills valued across tech and business industries.',
+            level: 'All Levels',
             btnLink: '/courses/ai-ml-chatgpt-&-data-science',
         },
         {
@@ -69,8 +69,8 @@ const LatestCourses = () => {
             image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
             title: 'Software Development & Management',
             description:
-                'Build full-stack applications from scratch — HTML, CSS, JavaScript, React, Python, databases, and DevOps. Gain project management and agile skills to deliver software that’s efficient, scalable, and ready for real clients.',
-            level: 'Intermediate to Advanced',
+                'Build full-stack applications from scratch  HTML, CSS, JavaScript, React, Python, databases, and DevOps. Gain project management and agile skills to deliver software that’s efficient, scalable, and ready for real clients.',
+            level: 'All Levels',
             btnLink: '/courses/software-development-&-management',
         },
     ];
