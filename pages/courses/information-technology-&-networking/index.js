@@ -6,7 +6,7 @@ import OutcomesCertificates from '@/blocks/OutcomesCertificates/OutcomesCertific
 import React from 'react'
 import LatestCoursesTwo from '@/blocks/LatestCoursesTwo/LatestCoursesTwo'
 import Testimonials from '@/blocks/Testimonials/Testimonials'
-import CTASection from '@/blocks/CTASection/CTASection'
+import CTASectionTwo from '@/blocks/CTASectionTwo/CTASectionTwo'
 
 export default function CoursesDetailPage() {
 
@@ -152,6 +152,11 @@ export default function CoursesDetailPage() {
         },
     ];
 
+    const ctaSection = {
+        title: 'Begin with clarity, finish with confidence',
+        desc: ' Talk to a counselor today—map out a learning path that fits your goals, schedule, and nearest Kerala branch for a smooth start and a strong finish',
+    }
+
 
     return (
         <div>
@@ -161,8 +166,8 @@ export default function CoursesDetailPage() {
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
             <LatestCoursesTwo jobCodes={['software-dev', 'digital-marketing', 'graphic-design', 'interior-design', 'fashion-design']} />
-            <Testimonials testimonials={testimonials}/>
-            <CTASection />
+            <Testimonials testimonials={testimonials} />
+            <CTASectionTwo ctaSection={ctaSection} />
         </div>
     )
 }

@@ -6,7 +6,7 @@ import OutcomesCertificates from '@/blocks/OutcomesCertificates/OutcomesCertific
 import React from 'react'
 import LatestCoursesTwo from '@/blocks/LatestCoursesTwo/LatestCoursesTwo'
 import Testimonials from '@/blocks/Testimonials/Testimonials'
-import CTASection from '@/blocks/CTASection/CTASection'
+import CTASectionTwo from '@/blocks/CTASectionTwo/CTASectionTwo'
 
 export default function CoursesDetailPage() {
 
@@ -146,6 +146,10 @@ export default function CoursesDetailPage() {
         },
     ];
 
+    const ctaSection = {
+        title: 'Design with clarity, deliver with confidence',
+        desc: ' Talk to a counselor today—pick your branch, align modules to your goals, and begin your first project.',
+    }
 
     return (
         <div>
@@ -156,7 +160,7 @@ export default function CoursesDetailPage() {
             <KeralaAvailability availabilityData={availabilityData} />
             <LatestCoursesTwo jobCodes={['graphic-design', 'digital-marketing', 'it-networking']} />
             <Testimonials testimonials={testimonials} />
-            <CTASection />
+            <CTASectionTwo ctaSection={ctaSection} />
         </div>
     )
 }

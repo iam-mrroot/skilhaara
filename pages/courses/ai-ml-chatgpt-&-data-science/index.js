@@ -5,8 +5,8 @@ import LearningWorks from '@/blocks/LearningWorks/LearningWorks';
 import OutcomesCertificates from '@/blocks/OutcomesCertificates/OutcomesCertificates';
 import LatestCoursesTwo from '@/blocks/LatestCoursesTwo/LatestCoursesTwo';
 import Testimonials from '@/blocks/Testimonials/Testimonials';
-import CTASection from '@/blocks/CTASection/CTASection';
 import React from 'react';
+import CTASectionTwo from '@/blocks/CTASectionTwo/CTASectionTwo';
 
 export default function DataScienceArtificialIntelligence() {
 
@@ -172,6 +172,11 @@ export default function DataScienceArtificialIntelligence() {
         },
     ]
 
+    const ctaSection = {
+        title: 'Begin with clarity, finish with confidence',
+        desc: ' Talk to a counselor—choose a branch, map modules to goals, and set a date to start building models that matter.',
+    }
+
 
     return (
         <div>
@@ -182,7 +187,7 @@ export default function DataScienceArtificialIntelligence() {
             <KeralaAvailability availabilityData={availabilityData} />
             <LatestCoursesTwo jobCodes={['it-networking', 'software-dev', 'digital-marketing']} />
             <Testimonials testimonials={testimonials} />
-            <CTASection />
+            <CTASectionTwo ctaSection={ctaSection} />
         </div>
     );
 }

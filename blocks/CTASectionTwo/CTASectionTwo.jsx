@@ -1,19 +1,18 @@
 // components/CTASection/CTASection.tsx
 import Link from 'next/link';
-import styles from './CTASection.module.scss';
+import styles from './CTASectionTwo.module.scss';
 
-const CTASection = () => {
+const CTASectionTwo = ({ ctaSection }) => {
   return (
     <section className={styles.ctaSection} data-aos="zoom-in">
       <div className={styles.container}>
         <div className={styles.content}>
           <h2 className={styles.title}>
-           Let's Join the<br />
-            Global Classroom
+            {ctaSection.title}
           </h2>
 
           <p className={styles.description}>
-            Our platform offers a wide range of courses and resources <br /> designed to help you acquire new competency.
+            {ctaSection.desc}
           </p>
 
           <div className={styles.buttonGroup}>
@@ -57,4 +56,4 @@ const CTASection = () => {
   );
 };
 
-export default CTASection;
+export default CTASectionTwo;

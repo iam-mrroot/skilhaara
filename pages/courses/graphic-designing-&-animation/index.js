@@ -5,8 +5,8 @@ import LearningWorks from '@/blocks/LearningWorks/LearningWorks';
 import OutcomesCertificates from '@/blocks/OutcomesCertificates/OutcomesCertificates';
 import LatestCoursesTwo from '@/blocks/LatestCoursesTwo/LatestCoursesTwo';
 import Testimonials from '@/blocks/Testimonials/Testimonials';
-import CTASection from '@/blocks/CTASection/CTASection';
 import React from 'react';
+import CTASectionTwo from '@/blocks/CTASectionTwo/CTASectionTwo';
 
 export default function GraphicDesigningPage() {
     const courseData = {
@@ -170,6 +170,11 @@ export default function GraphicDesigningPage() {
         },
     ];
 
+    const ctaSection = {
+        title: 'Create with clarity, showcase with confidence',
+        desc: ' Talk to a counselor today—choose your branch, plan your modules, and start building your creative portfolio',
+    }
+
 
     return (
         <div>
@@ -180,7 +185,7 @@ export default function GraphicDesigningPage() {
             <KeralaAvailability availabilityData={availabilityData} />
             <LatestCoursesTwo jobCodes={['digital-marketing', 'it-networking', 'interior-design']} />
             <Testimonials testimonials={testimonials} />
-            <CTASection />
+             <CTASectionTwo ctaSection={ctaSection} />
         </div>
     );
 }

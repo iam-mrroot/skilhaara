@@ -5,8 +5,8 @@ import LearningWorks from '@/blocks/LearningWorks/LearningWorks';
 import OutcomesCertificates from '@/blocks/OutcomesCertificates/OutcomesCertificates';
 import LatestCoursesTwo from '@/blocks/LatestCoursesTwo/LatestCoursesTwo';
 import Testimonials from '@/blocks/Testimonials/Testimonials';
-import CTASection from '@/blocks/CTASection/CTASection';
 import React from 'react';
+import CTASectionTwo from '@/blocks/CTASectionTwo/CTASectionTwo';
 
 export default function FashionDesigningPage() {
     const courseData = {
@@ -166,6 +166,11 @@ export default function FashionDesigningPage() {
         },
     ];
 
+    const ctaSection = {
+        title: 'Begin with clarity, finish with confidence',
+        desc: ' Talk to a counselor today—pick your branch, align modules with your goals, and start your journey toward your first collection.',
+    }
+
 
 
     return (
@@ -176,8 +181,8 @@ export default function FashionDesigningPage() {
             <OutcomesCertificates outcomesData={outcomesData} />
             <KeralaAvailability availabilityData={availabilityData} />
             <LatestCoursesTwo jobCodes={['graphic-design', 'digital-marketing', 'interior-design']} />
-            <Testimonials testimonials={testimonials}/>
-            <CTASection />
+            <Testimonials testimonials={testimonials} />
+            <CTASectionTwo ctaSection={ctaSection} />
         </div>
     );
 }
